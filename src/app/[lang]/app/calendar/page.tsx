@@ -48,7 +48,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       location: locale === "ro" ? "Naive – etajul 5, București" : "Naive – 5th floor, Bucharest",
       price: "119 lei",
       priceNote: locale === "ro" ? "Include welcome drink + DJ & MC + experiență" : "Includes welcome drink + DJ & MC + experience",
-      image: null as string | null,
+      image: "/Suspecti/brunch.jpeg",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
         ? "O experiență de zi în care muzica bună și karaoke-ul cu un twist diferit aduc energia unei petreceri memorabile. Dress code: White with a touch of sparkle."
