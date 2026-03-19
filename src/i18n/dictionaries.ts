@@ -4,10 +4,8 @@ const dictionaries = {
   ro: {
     // Landing page
     landing: {
-      underConstruction: "În Construcție",
-      comingSoon: "Lucrăm la ceva extraordinar. Rămâi aproape!",
       enterApp: "Intră în Aplicație",
-      copyright: "© 2025 Suspecți. Toate drepturile rezervate.",
+      copyright: "© 2026 Suspecți. Toate drepturile rezervate.",
     },
     // Navigation
     nav: {
@@ -248,10 +246,8 @@ const dictionaries = {
   en: {
     // Landing page
     landing: {
-      underConstruction: "Under Construction",
-      comingSoon: "We're working on something extraordinary. Stay tuned!",
       enterApp: "Enter the App",
-      copyright: "© 2025 Suspecți. All rights reserved.",
+      copyright: "© 2026 Suspecți. All rights reserved.",
     },
     // Navigation
     nav: {

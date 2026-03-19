@@ -51,7 +51,7 @@ export default function Navbar({ locale, dictionary }: NavbarProps) {
           <div className="hidden lg:flex items-center gap-4">
             <Link
               href={`/${locale}/app/calendar`}
-              className="px-4 py-2 text-sm font-medium text-zinc-900 bg-amber-400 rounded-full hover:bg-amber-300 transition-colors"
+              className="px-4 py-2 text-sm font-medium text-white bg-plum-600 rounded-full hover:bg-plum-500 transition-colors"
             >
               {t.buyTicket}
             </Link>
@@ -109,7 +109,7 @@ export default function Navbar({ locale, dictionary }: NavbarProps) {
             <Link
               href={`/${locale}/app/calendar`}
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-4 py-2 mt-4 text-center font-medium text-zinc-900 bg-amber-400 rounded-full hover:bg-amber-300 transition-colors"
+              className="block px-4 py-2 mt-4 text-center font-medium text-white bg-plum-600 rounded-full hover:bg-plum-500 transition-colors"
             >
               {t.buyTicket}
             </Link>

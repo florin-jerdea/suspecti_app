@@ -10,6 +10,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-plum-900: #3a0e33;
+  --color-plum-800: #4d1245;
+  --color-plum-700: #651959;
+  --color-plum-600: #7e2070;
+  --color-plum-500: #9b2d8b;
+  --color-plum-400: #b44da6;
+  --color-plum-300: #d07cc4;
+  --color-plum-200: #e4a8db;
 }
 
 @media (prefers-color-scheme: dark) {

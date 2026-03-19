@@ -10,12 +10,12 @@ export default function LandingPage() {
   const t = getDictionary(locale).landing;
 
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center bg-zinc-950 px-6 overflow-hidden">
+    <div className="relative flex min-h-screen flex-col items-center justify-center bg-black px-6 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-amber-500/5 blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-red-500/5 blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[600px] rounded-full bg-amber-400/3 blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-plum-700/5 blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-plum-500/5 blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[600px] rounded-full bg-plum-600/3 blur-3xl" />
       </div>
 
       {/* Subtle grid pattern */}
@@ -28,7 +28,7 @@ export default function LandingPage() {
             onClick={() => setLocale("ro")}
             className={`px-3 py-1.5 text-sm font-medium rounded-full transition-all ${
               locale === "ro"
-                ? "bg-amber-400 text-zinc-900"
+                ? "bg-plum-700 text-white"
                 : "text-white/70 hover:text-white"
             }`}
           >
@@ -38,7 +38,7 @@ export default function LandingPage() {
             onClick={() => setLocale("en")}
             className={`px-3 py-1.5 text-sm font-medium rounded-full transition-all ${
               locale === "en"
-                ? "bg-amber-400 text-zinc-900"
+                ? "bg-plum-700 text-white"
                 : "text-white/70 hover:text-white"
             }`}
           >
@@ -53,32 +53,18 @@ export default function LandingPage() {
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white">
             SUSPECȚI
           </h1>
-          <p className="mt-2 text-amber-400/80 text-sm sm:text-base tracking-widest uppercase">
+          <p className="mt-2 text-plum-400/80 text-sm sm:text-base tracking-widest uppercase">
             Interactive Social Experiences
           </p>
         </div>
 
         {/* Decorative line */}
-        <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-400/50 to-transparent mb-8" />
-
-        {/* Under Construction Badge */}
-        <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-400/10 border border-amber-400/20">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
-          </span>
-          <span className="text-amber-400 text-sm font-medium">{t.underConstruction}</span>
-        </div>
-
-        {/* Message */}
-        <p className="mb-10 text-lg sm:text-xl text-zinc-400 leading-relaxed">
-          {t.comingSoon}
-        </p>
+        <div className="w-24 h-px bg-gradient-to-r from-transparent via-plum-500/50 to-transparent mb-8" />
 
         {/* CTA Button */}
         <Link
           href={`/${locale}/app`}
-          className="group relative inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold text-zinc-900 bg-gradient-to-r from-amber-400 to-amber-500 rounded-full shadow-lg shadow-amber-500/25 transition-all hover:scale-105 hover:shadow-xl hover:shadow-amber-500/30"
+          className="group relative inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-plum-600 to-plum-700 rounded-full shadow-lg shadow-plum-700/25 transition-all hover:scale-105 hover:shadow-xl hover:shadow-plum-700/30"
         >
           {t.enterApp}
           <span className="transition-transform group-hover:translate-x-1">→</span>

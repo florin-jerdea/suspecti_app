@@ -26,21 +26,49 @@ export default async function HomePage({ params }: HomePageProps) {
     { slug: "brunch", ...t.experiences.brunch },
   ];
 
+  const upcomingEvents = [
+    {
+      date: "22 Mar 2026 • 16:30",
+      title: locale === "ro" ? "Suspecți la Cină – Murder on the Dance Floor" : "Suspecți at Dinner – Murder on the Dance Floor",
+      location: "Naive, București",
+    },
+    {
+      date: "29 Mar 2026 • 15:00",
+      title: locale === "ro" ? "Suspecți la Brunch" : "Suspecți at Brunch",
+      location: locale === "ro" ? "Naive – etajul 5, București" : "Naive – 5th floor, Bucharest",
+    },
+    {
+      date: "3 Apr 2026 • 20:00",
+      title: locale === "ro" ? "Suspecți la Party – Diamonds After Dark" : "Suspecți at Party – Diamonds After Dark",
+      location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
+    },
+    {
+      date: "18 Apr 2026 • 16:00",
+      title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
+      location: "Naive, București",
+    },
+    {
+      date: "4 Jul 2026",
+      title: locale === "ro" ? "Suspecți pe Velier" : "Suspecți on a Sailboat",
+      location: "Coming soon",
+    },
+  ];
+
   return (
-    <div className="bg-zinc-950 text-white">
+    <div className="bg-black text-white">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center px-6 overflow-hidden">
         {/* Background elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-amber-500/10 blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-red-500/10 blur-3xl" />
+          <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-plum-700/10 blur-3xl" />
+          <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-plum-500/10 blur-3xl" />
         </div>
 
         {/* Video placeholder */}
         <div className="absolute inset-0 bg-zinc-900/50" />
 
         <div className="relative z-10 text-center max-w-4xl">
-          <p className="text-amber-400 text-sm sm:text-base tracking-widest uppercase mb-4">
+          <p className="text-plum-400 text-sm sm:text-base tracking-widest uppercase mb-4">
             {t.home.hero.tagline}
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6">
@@ -52,7 +80,7 @@ export default async function HomePage({ params }: HomePageProps) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href={`/${locale}/app/calendar`}
-              className="px-8 py-4 text-lg font-semibold text-zinc-900 bg-amber-400 rounded-full hover:bg-amber-300 transition-all hover:scale-105"
+              className="px-8 py-4 text-lg font-semibold text-white bg-plum-600 rounded-full hover:bg-plum-500 transition-all hover:scale-105"
             >
               {t.home.hero.cta}
             </Link>
@@ -84,7 +112,7 @@ export default async function HomePage({ params }: HomePageProps) {
               <p className="text-zinc-300">{t.home.whatIsNot.notCompetition}</p>
             </div>
           </div>
-          <p className="text-lg text-amber-400/80">{t.home.whatIsNot.description}</p>
+          <p className="text-lg text-plum-400/80">{t.home.whatIsNot.description}</p>
         </div>
       </section>
 
@@ -95,7 +123,7 @@ export default async function HomePage({ params }: HomePageProps) {
             <h2 className="text-3xl sm:text-4xl font-bold">{t.home.experiences.title}</h2>
             <Link
               href={`/${locale}/app/experiences`}
-              className="text-amber-400 hover:text-amber-300 transition-colors"
+              className="text-plum-400 hover:text-plum-300 transition-colors"
             >
               {t.home.experiences.viewAll} →
             </Link>
@@ -105,12 +133,12 @@ export default async function HomePage({ params }: HomePageProps) {
               <Link
                 key={exp.slug}
                 href={`/${locale}/app/experiences/${exp.slug}`}
-                className="group p-6 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-amber-400/50 transition-all hover:scale-[1.02]"
+                className="group p-6 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-plum-500/50 transition-all hover:scale-[1.02]"
               >
                 <div className="h-40 rounded-xl bg-zinc-800 mb-4 flex items-center justify-center text-4xl">
                   🎭
                 </div>
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-amber-400 transition-colors">
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-plum-400 transition-colors">
                   {exp.name}
                 </h3>
                 <p className="text-zinc-400 text-sm">{exp.shortDescription}</p>
@@ -126,21 +154,21 @@ export default async function HomePage({ params }: HomePageProps) {
           <h2 className="text-3xl sm:text-4xl font-bold mb-12">{t.home.howItWorks.title}</h2>
           <div className="grid sm:grid-cols-3 gap-8">
             <div>
-              <div className="w-16 h-16 rounded-full bg-amber-400 text-zinc-900 text-2xl font-bold flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full bg-plum-600 text-white text-2xl font-bold flex items-center justify-center mx-auto mb-4">
                 1
               </div>
               <h3 className="text-xl font-semibold mb-2">{t.home.howItWorks.step1.title}</h3>
               <p className="text-zinc-400">{t.home.howItWorks.step1.description}</p>
             </div>
             <div>
-              <div className="w-16 h-16 rounded-full bg-amber-400 text-zinc-900 text-2xl font-bold flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full bg-plum-600 text-white text-2xl font-bold flex items-center justify-center mx-auto mb-4">
                 2
               </div>
               <h3 className="text-xl font-semibold mb-2">{t.home.howItWorks.step2.title}</h3>
               <p className="text-zinc-400">{t.home.howItWorks.step2.description}</p>
             </div>
             <div>
-              <div className="w-16 h-16 rounded-full bg-amber-400 text-zinc-900 text-2xl font-bold flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full bg-plum-600 text-white text-2xl font-bold flex items-center justify-center mx-auto mb-4">
                 3
               </div>
               <h3 className="text-xl font-semibold mb-2">{t.home.howItWorks.step3.title}</h3>
@@ -182,26 +210,25 @@ export default async function HomePage({ params }: HomePageProps) {
             <h2 className="text-3xl sm:text-4xl font-bold">{t.home.upcomingEvents.title}</h2>
             <Link
               href={`/${locale}/app/calendar`}
-              className="text-amber-400 hover:text-amber-300 transition-colors"
+              className="text-plum-400 hover:text-plum-300 transition-colors"
             >
               {t.home.upcomingEvents.viewCalendar} →
             </Link>
           </div>
-          {/* Placeholder events */}
           <div className="space-y-4">
-            {[1, 2, 3].map((i) => (
+            {upcomingEvents.map((event) => (
               <div
-                key={i}
+                key={event.date}
                 className="flex flex-col sm:flex-row sm:items-center justify-between p-6 rounded-2xl bg-zinc-800/50 border border-zinc-700"
               >
                 <div className="mb-4 sm:mb-0">
-                  <p className="text-amber-400 text-sm mb-1">15 Feb 2025 • 19:00</p>
-                  <h3 className="text-xl font-semibold">Suspecți la Cină</h3>
-                  <p className="text-zinc-400 text-sm">București, România</p>
+                  <p className="text-plum-400 text-sm mb-1">{event.date}</p>
+                  <h3 className="text-xl font-semibold">{event.title}</h3>
+                  <p className="text-zinc-400 text-sm">{event.location}</p>
                 </div>
                 <Link
                   href={`/${locale}/app/calendar`}
-                  className="px-6 py-3 text-sm font-semibold text-zinc-900 bg-amber-400 rounded-full hover:bg-amber-300 transition-colors"
+                  className="px-6 py-3 text-sm font-semibold text-white bg-plum-600 rounded-full hover:bg-plum-500 transition-colors"
                 >
                   {t.nav.buyTicket}
                 </Link>
@@ -218,7 +245,7 @@ export default async function HomePage({ params }: HomePageProps) {
             <h2 className="text-3xl sm:text-4xl font-bold">{t.home.testimonials.title}</h2>
             <Link
               href={`/${locale}/app/testimonials`}
-              className="text-amber-400 hover:text-amber-300 transition-colors"
+              className="text-plum-400 hover:text-plum-300 transition-colors"
             >
               {t.home.testimonials.viewAll} →
             </Link>
@@ -243,14 +270,14 @@ export default async function HomePage({ params }: HomePageProps) {
       </section>
 
       {/* Corporate Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-amber-400/10 to-red-400/10">
+      <section className="py-20 px-6 bg-gradient-to-br from-plum-700/10 to-plum-500/10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">{t.home.corporate.title}</h2>
-          <p className="text-xl text-amber-400 mb-4">{t.home.corporate.subtitle}</p>
+          <p className="text-xl text-plum-400 mb-4">{t.home.corporate.subtitle}</p>
           <p className="text-zinc-400 mb-8 max-w-2xl mx-auto">{t.home.corporate.description}</p>
           <Link
             href={`/${locale}/app/corporate`}
-            className="inline-flex px-8 py-4 text-lg font-semibold text-zinc-900 bg-amber-400 rounded-full hover:bg-amber-300 transition-all hover:scale-105"
+            className="inline-flex px-8 py-4 text-lg font-semibold text-white bg-plum-600 rounded-full hover:bg-plum-500 transition-all hover:scale-105"
           >
             {t.home.corporate.cta}
           </Link>
@@ -266,9 +293,9 @@ export default async function HomePage({ params }: HomePageProps) {
             <input
               type="email"
               placeholder={t.home.newsletter.placeholder}
-              className="flex-1 px-6 py-4 rounded-full bg-zinc-900 border border-zinc-700 text-white placeholder:text-zinc-500 focus:outline-none focus:border-amber-400"
+              className="flex-1 px-6 py-4 rounded-full bg-zinc-900 border border-zinc-700 text-white placeholder:text-zinc-500 focus:outline-none focus:border-plum-500"
             />
-            <button className="px-8 py-4 font-semibold text-zinc-900 bg-amber-400 rounded-full hover:bg-amber-300 transition-colors">
+            <button className="px-8 py-4 font-semibold text-white bg-plum-600 rounded-full hover:bg-plum-500 transition-colors">
               {t.home.newsletter.cta}
             </button>
           </div>
