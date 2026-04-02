@@ -28,24 +28,34 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const upcomingEvents = [
     {
-      date: "22 Mar 2026 • 16:30",
-      title: locale === "ro" ? "Suspecți la Cină – Murder on the Dance Floor" : "Suspecți at Dinner – Murder on the Dance Floor",
-      location: "Naive, București",
-    },
-    {
-      date: "29 Mar 2026 • 15:00",
-      title: locale === "ro" ? "Suspecți la Brunch" : "Suspecți at Brunch",
-      location: locale === "ro" ? "Naive – etajul 5, București" : "Naive – 5th floor, Bucharest",
-    },
-    {
-      date: "3 Apr 2026 • 20:00",
-      title: locale === "ro" ? "Suspecți la Party – Diamonds After Dark" : "Suspecți at Party – Diamonds After Dark",
-      location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
+      date: "16 Apr 2026 • 18:30",
+      title: locale === "ro" ? "Suspecți la Tarot" : "Suspecți at Tarot",
+      location: "Mirador, București",
     },
     {
       date: "18 Apr 2026 • 16:00",
       title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
       location: "Naive, București",
+    },
+    {
+      date: "19 Apr 2026 • 17:00",
+      title: locale === "ro" ? "Suspecți la Prima Vedere – Dincolo de aparențe" : "Suspecți at First Sight – Beyond appearances",
+      location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
+    },
+    {
+      date: "26 Apr 2026 • 16:30",
+      title: locale === "ro" ? "Suspecți la Cină – Timișoara" : "Suspecți at Dinner – Timișoara",
+      location: "TBA, Timișoara",
+    },
+    {
+      date: "8 Mai 2026 • 20:00",
+      title: locale === "ro" ? "Suspecți la Party – Diamonds After Dark" : "Suspecți at Party – Diamonds After Dark",
+      location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
+    },
+    {
+      date: "10 Mai 2026 • 18:30",
+      title: locale === "ro" ? "Suspecți la Tarot" : "Suspecți at Tarot",
+      location: "Mirador, București",
     },
     {
       date: "4 Jul 2026",
