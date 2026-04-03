@@ -33,29 +33,44 @@ export default async function HomePage({ params }: HomePageProps) {
       location: "Mirador, București",
     },
     {
-      date: "18 Apr 2026 • 16:00",
-      title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
-      location: "Naive, București",
-    },
-    {
-      date: "19 Apr 2026 • 17:00",
+      date: "18 Apr 2026 • 17:00",
       title: locale === "ro" ? "Suspecți la Prima Vedere – Dincolo de aparențe" : "Suspecți at First Sight – Beyond appearances",
       location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
     },
     {
       date: "26 Apr 2026 • 16:30",
       title: locale === "ro" ? "Suspecți la Cină – Timișoara" : "Suspecți at Dinner – Timișoara",
-      location: "TBA, Timișoara",
+      location: "Sky Rooftop Restaurant, Timișoara",
     },
     {
-      date: "8 Mai 2026 • 20:00",
-      title: locale === "ro" ? "Suspecți la Party – Diamonds After Dark" : "Suspecți at Party – Diamonds After Dark",
+      date: "10 Mai 2026 • 15:00",
+      title: locale === "ro" ? "Suspecți la Brunch" : "Suspecți at Brunch",
       location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
     },
     {
-      date: "10 Mai 2026 • 18:30",
+      date: "16 Mai 2026 • 16:30",
+      title: locale === "ro" ? "Suspecți la Cină – Iași" : "Suspecți at Dinner – Iași",
+      location: "TBA, Iași",
+    },
+    {
+      date: "17 Mai 2026 • 17:00",
+      title: locale === "ro" ? "Suspecți la Prima Vedere – Iași" : "Suspecți at First Sight – Iași",
+      location: "TBA, Iași",
+    },
+    {
+      date: "19 Mai 2026 • 18:30",
       title: locale === "ro" ? "Suspecți la Tarot" : "Suspecți at Tarot",
       location: "Mirador, București",
+    },
+    {
+      date: "23 Mai 2026",
+      title: locale === "ro" ? "Suspecți la Cină – București" : "Suspecți at Dinner – București",
+      location: "București",
+    },
+    {
+      date: "29 Mai 2026 • 20:00",
+      title: locale === "ro" ? "Suspecți la Party – Diamonds After Dark" : "Suspecți at Party – Diamonds After Dark",
+      location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
     },
     {
       date: "4 Jul 2026",
