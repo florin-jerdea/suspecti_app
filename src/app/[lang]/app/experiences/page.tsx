@@ -21,9 +21,9 @@ export default async function ExperiencesPage({ params }: ExperiencesPageProps) 
     { slug: "dinner", icon: "🍽️", ...t.experiences.dinner },
     { slug: "party", icon: "🎉", ...t.experiences.party },
     { slug: "singles", icon: "💘", ...t.experiences.singles },
-    { slug: "treasure-hunt", icon: "🗺️", ...t.experiences.treasureHunt },
-    { slug: "sailboat", icon: "⛵", ...t.experiences.sailboat },
+    { slug: "tarot", icon: "🔮", ...t.experiences.tarot },
     { slug: "brunch", icon: "🥂", ...t.experiences.brunch },
+    { slug: "sailboat", icon: "⛵", ...t.experiences.sailboat },
   ];
 
   return (

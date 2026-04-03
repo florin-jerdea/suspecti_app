@@ -24,7 +24,7 @@ const dictionaries = {
       hero: {
         tagline: "Experiențe sociale interactive",
         title: "Jocul e doar un pretext. Socializarea e experiența.",
-        subtitle: "Creăm experiențe interactive unde nu vii singur și nu pleci plictisit.",
+        subtitle: "Evenimente sociale interactive pentru oameni care vor mai mult decât o ieșire în oraș.",
         cta: "Vezi Evenimentele",
         ctaCorporate: "Solicită Ofertă Corporate",
       },
@@ -106,24 +106,24 @@ const dictionaries = {
         description: "Intră în pielea personajului tău la o petrecere de neuitat.",
       },
       singles: {
-        name: "Suspecți la Prima Întâlnire",
-        shortDescription: "Dating cu un twist interactiv",
-        description: "Cunoaște oameni noi într-un mod distractiv și relaxat.",
+        name: "Suspecți la Prima Vedere",
+        shortDescription: "Socializare pentru singles, construită pe compatibilitate și chimie",
+        description: "O experiență de socializare alături de un psiholog expert în profiling, unde descoperi mecanismele atracției și compatibilității.",
       },
-      treasureHunt: {
-        name: "Suspecți în Treasure Hunt",
-        shortDescription: "Aventură urbană cu mistere de rezolvat",
-        description: "Explorează orașul și rezolvă mistere alături de echipa ta.",
+      tarot: {
+        name: "Suspecți la Tarot",
+        shortDescription: "Socializare cu un touch de Tarot",
+        description: "O seară de conversații autentice despre relații, pasiuni și subiecte care contează, cu un colț de Tarot pentru o perspectivă diferită.",
       },
       sailboat: {
-        name: "Suspecți pe Barcă",
+        name: "Suspecți pe Velier",
         shortDescription: "Mister pe valuri",
         description: "O experiență unică pe apă, cu suspans și socializare.",
       },
       brunch: {
         name: "Suspecți la Brunch",
-        shortDescription: "Mister matinal cu delicii culinare",
-        description: "Începe ziua cu o experiență relaxată și savuroasă.",
+        shortDescription: "Party de zi, jocuri și un altfel de karaoke",
+        description: "Muzică bună, jocuri interactive și karaoke cu un twist diferit, într-o atmosferă de petrecere memorabilă.",
       },
       whatYouGet: "Ce primești",
       howItWorks: "Cum se desfășoară",
@@ -266,7 +266,7 @@ const dictionaries = {
       hero: {
         tagline: "Interactive social experiences",
         title: "The game is just a pretext. Socializing is the experience.",
-        subtitle: "We create interactive experiences where you don't come alone and you don't leave bored.",
+        subtitle: "Interactive social events for people who want more than just a night out.",
         cta: "See Events",
         ctaCorporate: "Request Corporate Offer",
       },
@@ -349,13 +349,13 @@ const dictionaries = {
       },
       singles: {
         name: "Suspecți at First Sight",
-        shortDescription: "Dating with an interactive twist",
-        description: "Meet new people in a fun and relaxed way.",
+        shortDescription: "Socializing for singles, built on compatibility and chemistry",
+        description: "A socializing experience with a profiling expert psychologist, where you discover the mechanisms of attraction and compatibility.",
       },
-      treasureHunt: {
-        name: "Suspecți Treasure Hunt",
-        shortDescription: "Urban adventure with mysteries to solve",
-        description: "Explore the city and solve mysteries with your team.",
+      tarot: {
+        name: "Suspecți at Tarot",
+        shortDescription: "Socializing with a Tarot touch",
+        description: "An evening of authentic conversations about relationships, passions and topics that matter, with a Tarot corner for a different perspective.",
       },
       sailboat: {
         name: "Suspecți on a Sailboat",
@@ -364,8 +364,8 @@ const dictionaries = {
       },
       brunch: {
         name: "Suspecți at Brunch",
-        shortDescription: "Morning mystery with culinary delights",
-        description: "Start your day with a relaxed and delicious experience.",
+        shortDescription: "Day party, games and a different kind of karaoke",
+        description: "Great music, interactive games and karaoke with a different twist, in a memorable party atmosphere.",
       },
       whatYouGet: "What you get",
       howItWorks: "How it unfolds",

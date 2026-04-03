@@ -11,16 +11,16 @@ const experienceIcons: Record<string, string> = {
   dinner: "🍽️",
   party: "🎉",
   singles: "💘",
-  "treasure-hunt": "🗺️",
+  tarot: "🔮",
   sailboat: "⛵",
   brunch: "🥂",
 };
 
-const experienceKeys: Record<string, "dinner" | "party" | "singles" | "treasureHunt" | "sailboat" | "brunch"> = {
+const experienceKeys: Record<string, "dinner" | "party" | "singles" | "tarot" | "sailboat" | "brunch"> = {
   dinner: "dinner",
   party: "party",
   singles: "singles",
-  "treasure-hunt": "treasureHunt",
+  tarot: "tarot",
   sailboat: "sailboat",
   brunch: "brunch",
 };

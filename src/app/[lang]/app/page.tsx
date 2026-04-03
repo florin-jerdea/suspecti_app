@@ -21,9 +21,9 @@ export default async function HomePage({ params }: HomePageProps) {
     { slug: "dinner", ...t.experiences.dinner },
     { slug: "party", ...t.experiences.party },
     { slug: "singles", ...t.experiences.singles },
-    { slug: "treasure-hunt", ...t.experiences.treasureHunt },
-    { slug: "sailboat", ...t.experiences.sailboat },
+    { slug: "tarot", ...t.experiences.tarot },
     { slug: "brunch", ...t.experiences.brunch },
+    { slug: "sailboat", ...t.experiences.sailboat },
   ];
 
   const upcomingEvents = [
