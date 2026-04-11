@@ -72,7 +72,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       description: locale === "ro"
         ? "O seară de mister în stil Gatsby, cu rol dedicat, secrete și intrigi, pe terasa Sky Rooftop cu panoramă peste Timișoara. Dress code: Anii '20 – Dress to impress!"
         : "A Gatsby-style mystery evening with a dedicated role, secrets and intrigues, on the Sky Rooftop terrace overlooking Timișoara. Dress code: 1920s – Dress to impress!",
-      link: "https://forms.gle/rDwPKx2F7bjbUA5c8",
+      link: "https://www.ambilet.ro/bilete/crima-la-balul-lui-gatsby-timisoara-edition-855186/",
       status: "available" as const,
     },
     {
