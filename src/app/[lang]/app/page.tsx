@@ -28,43 +28,18 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const upcomingEvents = [
     {
-      date: "16 Apr 2026 • 18:30",
-      title: locale === "ro" ? "Suspecți la Tarot" : "Suspecți at Tarot",
-      location: "Mirador, București",
-    },
-    {
-      date: "18 Apr 2026 • 17:00",
+      date: locale === "ro" ? "TBA 2026" : "TBA 2026",
       title: locale === "ro" ? "Suspecți la Prima Vedere – Dincolo de aparențe" : "Suspecți at First Sight – Beyond appearances",
-      location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
+      location: locale === "ro" ? "To Be Announced" : "To Be Announced",
     },
     {
-      date: "26 Apr 2026 • 16:30",
-      title: locale === "ro" ? "Suspecți la Cină – Timișoara" : "Suspecți at Dinner – Timișoara",
-      location: "Sky Rooftop Restaurant, Timișoara",
-    },
-    {
-      date: "10 Mai 2026 • 15:00",
-      title: locale === "ro" ? "Suspecți la Brunch" : "Suspecți at Brunch",
-      location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
-    },
-    {
-      date: "16 Mai 2026 • 16:30",
-      title: locale === "ro" ? "Suspecți la Cină – Iași" : "Suspecți at Dinner – Iași",
-      location: "TBA, Iași",
-    },
-    {
-      date: "17 Mai 2026 • 17:00",
-      title: locale === "ro" ? "Suspecți la Prima Vedere – Iași" : "Suspecți at First Sight – Iași",
-      location: "TBA, Iași",
-    },
-    {
-      date: "19 Mai 2026 • 18:30",
+      date: "20 Mai 2026 • 18:30",
       title: locale === "ro" ? "Suspecți la Tarot" : "Suspecți at Tarot",
       location: "Mirador, București",
     },
     {
       date: "23 Mai 2026",
-      title: locale === "ro" ? "Suspecți la Cină – București" : "Suspecți at Dinner – București",
+      title: locale === "ro" ? "Suspecți la Cină – Murder on the Dance Floor" : "Suspecți at Dinner – Murder on the Dance Floor",
       location: "București",
     },
     {
