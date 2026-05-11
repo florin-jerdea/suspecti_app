@@ -28,29 +28,29 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const upcomingEvents = [
     {
-      date: locale === "ro" ? "TBA 2026" : "TBA 2026",
-      title: locale === "ro" ? "Suspecți la Prima Vedere – Dincolo de aparențe" : "Suspecți at First Sight – Beyond appearances",
-      location: locale === "ro" ? "To Be Announced" : "To Be Announced",
-    },
-    {
       date: "20 Mai 2026 • 18:30",
       title: locale === "ro" ? "Suspecți la Tarot" : "Suspecți at Tarot",
       location: "Mirador, București",
     },
     {
-      date: "23 Mai 2026",
+      date: "23 Mai 2026 • 17:30",
       title: locale === "ro" ? "Suspecți la Cină – Murder on the Dance Floor" : "Suspecți at Dinner – Murder on the Dance Floor",
-      location: "București",
+      location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
     },
     {
-      date: "29 Mai 2026 • 20:00",
-      title: locale === "ro" ? "Suspecți la Party – Diamonds After Dark" : "Suspecți at Party – Diamonds After Dark",
+      date: "29 Mai 2026 • 20:30",
+      title: locale === "ro" ? "Suspecți la Party – Diamonds, Cartels and Tropical Secrets 💎🌴" : "Suspecți at Party – Diamonds, Cartels and Tropical Secrets 💎🌴",
       location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
     },
     {
       date: "4 Jul 2026",
       title: locale === "ro" ? "Suspecți pe Velier" : "Suspecți on a Sailboat",
       location: "Coming soon",
+    },
+    {
+      date: "TBA 2026",
+      title: locale === "ro" ? "Suspecți la Prima Vedere – Dincolo de aparențe" : "Suspecți at First Sight – Beyond appearances",
+      location: locale === "ro" ? "To Be Announced" : "To Be Announced",
     },
   ];
 

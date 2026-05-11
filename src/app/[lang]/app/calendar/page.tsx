@@ -19,25 +19,6 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
 
   const events = [
     {
-      id: 2,
-      title: locale === "ro" ? "Suspecți la Prima Vedere" : "Suspecți at First Sight",
-      subtitle: locale === "ro" ? "Dincolo de aparențe" : "Beyond appearances",
-      date: "TBA",
-      month: "",
-      year: "2026",
-      time: "TBA",
-      location: locale === "ro" ? "To Be Announced" : "To Be Announced",
-      price: "200 lei",
-      priceNote: locale === "ro" ? "Exclusiv singles, 27–45 ani" : "Singles only, ages 27–45",
-      image: "/thumbnails/Suspecti la prima vedere 18 aprilie & 17 mai .jpeg",
-      gradient: "from-plum-700/20 to-plum-500/20",
-      description: locale === "ro"
-        ? "O experiență de socializare pentru singles, construită în jurul compatibilității și chimiei, alături de Smaranda Cernescu, psiholog și expert în profiling. Dress code: Elegant. Black & Red."
-        : "A socializing experience for singles, built around compatibility and chemistry, with Smaranda Cernescu, psychologist and profiling expert. Dress code: Elegant. Black & Red.",
-      link: "https://forms.gle/1jUSyvstM2KH2uFNA",
-      status: "available" as const,
-    },
-    {
       id: 7,
       title: locale === "ro" ? "Suspecți la Tarot" : "Suspecți at Tarot",
       subtitle: locale === "ro" ? "Suspecți la Povești cu un touch de Tarot" : "Suspecți Stories with a Tarot touch",
@@ -63,8 +44,8 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       date: "23",
       month: locale === "ro" ? "Mai" : "May",
       year: "2026",
-      time: "TBA",
-      location: "București",
+      time: "17:30",
+      location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
       price: "119 lei",
       priceNote: locale === "ro" ? "Include 1 pahar de prosecco și experiența" : "Includes 1 glass of prosecco and the experience",
       image: "/thumbnails/Suspecti la cina _ 23 mai.jpeg",
@@ -78,11 +59,11 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
     {
       id: 9,
       title: locale === "ro" ? "Suspecți la Party" : "Suspecți at Party",
-      subtitle: "Diamonds After Dark",
+      subtitle: "Diamonds, Cartels and Tropical Secrets 💎🌴",
       date: "29",
       month: locale === "ro" ? "Mai" : "May",
       year: "2026",
-      time: "20:00",
+      time: "20:30",
       location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
       price: "119 lei",
       priceNote: locale === "ro" ? "Early Bird (include prosecco + experiență + party)" : "Early Bird (includes prosecco + experience + party)",
@@ -112,6 +93,25 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
         : "A unique experience on water. Details coming soon.",
       link: null as string | null,
       status: "coming_soon" as const,
+    },
+    {
+      id: 2,
+      title: locale === "ro" ? "Suspecți la Prima Vedere" : "Suspecți at First Sight",
+      subtitle: locale === "ro" ? "Dincolo de aparențe" : "Beyond appearances",
+      date: "TBA",
+      month: "",
+      year: "2026",
+      time: "TBA",
+      location: locale === "ro" ? "To Be Announced" : "To Be Announced",
+      price: "200 lei",
+      priceNote: locale === "ro" ? "Exclusiv singles, 27–45 ani" : "Singles only, ages 27–45",
+      image: "/thumbnails/Suspecti la prima vedere 18 aprilie & 17 mai .jpeg",
+      gradient: "from-plum-700/20 to-plum-500/20",
+      description: locale === "ro"
+        ? "O experiență de socializare pentru singles, construită în jurul compatibilității și chimiei, alături de Smaranda Cernescu, psiholog și expert în profiling. Dress code: Elegant. Black & Red."
+        : "A socializing experience for singles, built around compatibility and chemistry, with Smaranda Cernescu, psychologist and profiling expert. Dress code: Elegant. Black & Red.",
+      link: "https://forms.gle/1jUSyvstM2KH2uFNA",
+      status: "available" as const,
     },
   ];
 
@@ -218,7 +218,9 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
                       rel="noopener noreferrer"
                       className="block w-full py-3.5 text-center text-sm font-semibold rounded-full bg-white text-zinc-900 hover:bg-plum-500 hover:text-white hover:shadow-lg hover:shadow-plum-700/25 transition-all"
                     >
-                      {t.calendar.event.buyTicket} →
+                      {event.date === "TBA"
+                        ? (locale === "ro" ? "Înscrie-te aici" : "Register here")
+                        : t.calendar.event.buyTicket} →
                     </a>
                   ) : (
                     <Link
