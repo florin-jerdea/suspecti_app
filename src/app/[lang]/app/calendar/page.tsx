@@ -34,7 +34,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       description: locale === "ro"
         ? "O seară de socializare cu un touch de Tarot. Discuții faine despre relații, pasiuni și subiecte care contează. Dress code: Dark Green, Black & Nude."
         : "A socializing evening with a Tarot touch. Great conversations about relationships, passions and topics that matter. Dress code: Dark Green, Black & Nude.",
-      link: "https://forms.gle/QcqbBqS2JBr5BQ9Z9",
+      link: "https://ambilet.ro/bilete/suspecti-la-tarot-4450",
       status: "available" as const,
     },
     {
@@ -72,7 +72,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       description: locale === "ro"
         ? "O experiență socială interactivă cu personaje, provocări și misiuni light, într-o atmosferă elegantă și misterioasă. Dress code: Elegant / All Black / Statement."
         : "An interactive social experience with characters, challenges and light missions, in an elegant and mysterious atmosphere. Dress code: Elegant / All Black / Statement.",
-      link: "https://forms.gle/rtC8GLbGiMuyH1GX7",
+      link: "https://ambilet.ro/bilete/suspecti-la-party-4451",
       status: "available" as const,
     },
     {
@@ -91,8 +91,8 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       description: locale === "ro"
         ? "O experiență unică pe apă. Detalii în curând."
         : "A unique experience on water. Details coming soon.",
-      link: null as string | null,
-      status: "coming_soon" as const,
+      link: "https://forms.gle/aGN2sPtRYSvHfPNZ9" as string | null,
+      status: "available" as "available" | "coming_soon",
     },
     {
       id: 2,
@@ -218,7 +218,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
                       rel="noopener noreferrer"
                       className="block w-full py-3.5 text-center text-sm font-semibold rounded-full bg-white text-zinc-900 hover:bg-plum-500 hover:text-white hover:shadow-lg hover:shadow-plum-700/25 transition-all"
                     >
-                      {event.date === "TBA"
+                      {event.date === "TBA" || event.link?.includes("forms.gle")
                         ? (locale === "ro" ? "Înscrie-te aici" : "Register here")
                         : t.calendar.event.buyTicket} →
                     </a>
