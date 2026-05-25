@@ -19,44 +19,6 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
 
   const events = [
     {
-      id: 7,
-      title: locale === "ro" ? "Suspecți la Tarot" : "Suspecți at Tarot",
-      subtitle: locale === "ro" ? "Suspecți la Povești cu un touch de Tarot" : "Suspecți Stories with a Tarot touch",
-      date: "20",
-      month: locale === "ro" ? "Mai" : "May",
-      year: "2026",
-      time: "18:30",
-      location: "Mirador, București",
-      price: "119 lei",
-      priceNote: locale === "ro" ? "Include o întrebare la tarot și un pahar de prosecco" : "Includes one tarot question and a glass of prosecco",
-      image: "/thumbnails/Suspecti la Tarot _ 16 aprilie & 19 mai.jpeg",
-      gradient: "from-plum-700/20 to-plum-500/20",
-      description: locale === "ro"
-        ? "O seară de socializare cu un touch de Tarot. Discuții faine despre relații, pasiuni și subiecte care contează. Dress code: Dark Green, Black & Nude."
-        : "A socializing evening with a Tarot touch. Great conversations about relationships, passions and topics that matter. Dress code: Dark Green, Black & Nude.",
-      link: "https://ambilet.ro/bilete/suspecti-la-tarot-4450",
-      status: "available" as const,
-    },
-    {
-      id: 8,
-      title: locale === "ro" ? "Suspecți la Cină" : "Suspecți at Dinner",
-      subtitle: locale === "ro" ? "Murder on the Dance Floor" : "Murder on the Dance Floor",
-      date: "23",
-      month: locale === "ro" ? "Mai" : "May",
-      year: "2026",
-      time: "17:30",
-      location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
-      price: "119 lei",
-      priceNote: locale === "ro" ? "Include 1 pahar de prosecco și experiența" : "Includes 1 glass of prosecco and the experience",
-      image: "/thumbnails/Suspecti la cina _ 23 mai.jpeg",
-      gradient: "from-plum-700/20 to-plum-500/20",
-      description: locale === "ro"
-        ? "O seară de mister pe ritmuri de Murder on the Dance Floor. Personaje, secrete și intrigi într-o atmosferă elegantă."
-        : "A mystery evening to the beat of Murder on the Dance Floor. Characters, secrets and intrigues in an elegant atmosphere.",
-      link: "https://ambilet.ro/bilete/suspecti-la-cina-murder-on-the-dance-floor-4434",
-      status: "available" as const,
-    },
-    {
       id: 9,
       title: locale === "ro" ? "Suspecți la Party" : "Suspecți at Party",
       subtitle: "Diamonds, Cartels and Tropical Secrets 💎🌴",
@@ -73,6 +35,25 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
         ? "O experiență socială interactivă cu personaje, provocări și misiuni light, într-o atmosferă elegantă și misterioasă. Dress code: Elegant / All Black / Statement."
         : "An interactive social experience with characters, challenges and light missions, in an elegant and mysterious atmosphere. Dress code: Elegant / All Black / Statement.",
       link: "https://ambilet.ro/bilete/suspecti-la-party-4451",
+      status: "available" as const,
+    },
+    {
+      id: 11,
+      title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
+      subtitle: locale === "ro" ? "Workshop de automachiaj" : "Self-makeup workshop",
+      date: "7",
+      month: locale === "ro" ? "Iun" : "Jun",
+      year: "2026",
+      time: "14:00",
+      location: locale === "ro" ? "GIOYA Pizza & Panini, București (Lisabona 11, Sector 1)" : "GIOYA Pizza & Panini, Bucharest (Lisabona 11, Sector 1)",
+      price: "TBA",
+      priceNote: locale === "ro" ? "Detalii pe pagina de bilete" : "Details on ticket page",
+      image: "/Suspecti/machiaj_image.jpeg",
+      gradient: "from-plum-700/20 to-plum-500/20",
+      description: locale === "ro"
+        ? "Workshop de automachiaj într-o duminică relaxată. Înveți tehnici esențiale pentru a te machia cu produsele tale."
+        : "Self-makeup workshop on a relaxed Sunday. Learn essential techniques to do your own makeup with your own products.",
+      link: "https://www.ambilet.ro/bilete/suspecti-la-automachiaj-4484",
       status: "available" as const,
     },
     {
