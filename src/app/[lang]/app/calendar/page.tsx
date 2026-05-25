@@ -47,7 +47,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       time: "14:00",
       location: locale === "ro" ? "GIOYA Pizza & Panini, București (Lisabona 11, Sector 1)" : "GIOYA Pizza & Panini, Bucharest (Lisabona 11, Sector 1)",
       price: "349 lei",
-      priceNote: locale === "ro" ? "Early Bird (include cursul + goodiebag) · 🔥 Doar 7 locuri" : "Early Bird (includes the workshop + goodiebag) · 🔥 Only 7 spots left",
+      priceNote: locale === "ro" ? "Early Bird (include cursul + goodiebag)" : "Early Bird (includes the workshop + goodiebag)",
       image: "/Suspecti/machiaj_image.jpeg",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
