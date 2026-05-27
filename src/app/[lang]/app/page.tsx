@@ -33,6 +33,11 @@ export default async function HomePage({ params }: HomePageProps) {
       location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
     },
     {
+      date: "31 Mai 2026 • 12:00",
+      title: locale === "ro" ? "Suspecți în Treasure Hunt – Kids Edition" : "Suspecți in Treasure Hunt – Kids Edition",
+      location: locale === "ro" ? "Calea Victoriei – intersecție cu Bld. Dacia, București" : "Calea Victoriei – at Bld. Dacia, Bucharest",
+    },
+    {
       date: "7 Iun 2026 • 14:00",
       title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
       location: locale === "ro" ? "GIOYA Pizza & Panini, București" : "GIOYA Pizza & Panini, Bucharest",

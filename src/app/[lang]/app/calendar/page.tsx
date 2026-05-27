@@ -38,6 +38,25 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       status: "available" as const,
     },
     {
+      id: 12,
+      title: locale === "ro" ? "Suspecți în Treasure Hunt" : "Suspecți in Treasure Hunt",
+      subtitle: "Kids Edition",
+      date: "31",
+      month: locale === "ro" ? "Mai" : "May",
+      year: "2026",
+      time: "12:00 – 13:30",
+      location: locale === "ro" ? "Calea Victoriei – intersecție cu Bld. Dacia, București" : "Calea Victoriei – at Bld. Dacia, Bucharest",
+      price: "50 lei",
+      priceNote: locale === "ro" ? "/ persoană · plata cash la eveniment" : "/ person · cash at the event",
+      image: "/thumbnails/Suspecti in Treasure Hunt - 31 mai.jpeg",
+      gradient: "from-plum-700/20 to-plum-500/20",
+      description: locale === "ro"
+        ? "Aventură, mister și distracție în oraș pentru familii și copii de minim 8 ani. Rezolvă indiciile, îndeplinește misiunile și transformăm orașul într-o aventură."
+        : "Adventure, mystery and fun in the city for families and kids aged 8+. Solve the clues, complete the missions and we'll turn the city into an adventure.",
+      link: "https://forms.gle/LdX6PujKSq6xZCiD6",
+      status: "available" as const,
+    },
+    {
       id: 11,
       title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
       subtitle: locale === "ro" ? "Workshop de automachiaj" : "Self-makeup workshop",
