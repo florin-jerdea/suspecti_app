@@ -68,7 +68,7 @@ export default async function HomePage({ params }: HomePageProps) {
       location: locale === "ro" ? "Naïve – etajul 5, București" : "Naïve – 5th floor, Bucharest",
     },
     {
-      date: "7 Iun 2026 • 14:00",
+      date: "26 Iul 2026 • 14:00",
       title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
       location: locale === "ro" ? "GIOYA Pizza & Panini, București" : "GIOYA Pizza & Panini, Bucharest",
     },
