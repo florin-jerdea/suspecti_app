@@ -170,6 +170,63 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       link: "https://haisasocializam.ro/evenimente-socializare/hai-sa-socializam-la-cina-around-the-world-with-style?ed=2",
       status: "available" as const,
     },
+    {
+      id: 11,
+      title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
+      subtitle: locale === "ro" ? "Workshop de automachiaj" : "Self-makeup workshop",
+      date: "7",
+      month: locale === "ro" ? "Iun" : "Jun",
+      year: "2026",
+      time: "14:00",
+      location: locale === "ro" ? "GIOYA Pizza & Panini, București (Lisabona 11, Sector 1)" : "GIOYA Pizza & Panini, Bucharest (Lisabona 11, Sector 1)",
+      price: "349 lei",
+      priceNote: locale === "ro" ? "Early Bird (include cursul + goodiebag)" : "Early Bird (includes the workshop + goodiebag)",
+      image: "/Suspecti/machiaj_image.jpeg",
+      gradient: "from-plum-700/20 to-plum-500/20",
+      description: locale === "ro"
+        ? "Workshop de automachiaj într-o duminică relaxată. Înveți tehnici esențiale pentru a te machia cu produsele tale."
+        : "Self-makeup workshop on a relaxed Sunday. Learn essential techniques to do your own makeup with your own products.",
+      link: "https://www.ambilet.ro/bilete/suspecti-la-automachiaj-4484",
+      status: "available" as const,
+    },
+    {
+      id: 10,
+      title: locale === "ro" ? "Suspecți pe Velier" : "Suspecți on a Sailboat",
+      subtitle: "",
+      date: "4",
+      month: locale === "ro" ? "Iul" : "Jul",
+      year: "2026",
+      time: "TBA",
+      location: locale === "ro" ? "Detalii în curând" : "Details coming soon",
+      price: "Coming soon",
+      priceNote: locale === "ro" ? "Bilete limitate" : "Limited tickets",
+      image: "/thumbnails/Suspecti pe velier - 4 iulie.jpeg",
+      gradient: "from-plum-700/20 to-plum-500/20",
+      description: locale === "ro"
+        ? "O experiență unică pe apă. Detalii în curând."
+        : "A unique experience on water. Details coming soon.",
+      link: "https://forms.gle/aGN2sPtRYSvHfPNZ9" as string | null,
+      status: "available" as "available" | "coming_soon",
+    },
+    {
+      id: 2,
+      title: locale === "ro" ? "Suspecți la Prima Vedere" : "Suspecți at First Sight",
+      subtitle: locale === "ro" ? "Dincolo de aparențe" : "Beyond appearances",
+      date: "TBA",
+      month: "",
+      year: "2026",
+      time: "TBA",
+      location: locale === "ro" ? "To Be Announced" : "To Be Announced",
+      price: "200 lei",
+      priceNote: locale === "ro" ? "Exclusiv singles, 27–45 ani" : "Singles only, ages 27–45",
+      image: "/thumbnails/Suspecti la prima vedere 18 aprilie & 17 mai .jpeg",
+      gradient: "from-plum-700/20 to-plum-500/20",
+      description: locale === "ro"
+        ? "O experiență de socializare pentru singles, construită în jurul compatibilității și chimiei, alături de Smaranda Cernescu, psiholog și expert în profiling. Dress code: Elegant. Black & Red."
+        : "A socializing experience for singles, built around compatibility and chemistry, with Smaranda Cernescu, psychologist and profiling expert. Dress code: Elegant. Black & Red.",
+      link: "https://forms.gle/1jUSyvstM2KH2uFNA",
+      status: "available" as const,
+    },
   ];
 
   const getStatusBadge = (event: typeof events[0]) => {

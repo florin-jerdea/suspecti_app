@@ -67,6 +67,21 @@ export default async function HomePage({ params }: HomePageProps) {
       title: locale === "ro" ? "Hai să socializăm la cină – Around the World with Style" : "Hai să socializăm at Dinner – Around the World with Style",
       location: locale === "ro" ? "Naïve – etajul 5, București" : "Naïve – 5th floor, Bucharest",
     },
+    {
+      date: "7 Iun 2026 • 14:00",
+      title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
+      location: locale === "ro" ? "GIOYA Pizza & Panini, București" : "GIOYA Pizza & Panini, Bucharest",
+    },
+    {
+      date: "4 Iul 2026",
+      title: locale === "ro" ? "Suspecți pe Velier" : "Suspecți on a Sailboat",
+      location: "Coming soon",
+    },
+    {
+      date: "TBA 2026",
+      title: locale === "ro" ? "Suspecți la Prima Vedere – Dincolo de aparențe" : "Suspecți at First Sight – Beyond appearances",
+      location: locale === "ro" ? "To Be Announced" : "To Be Announced",
+    },
   ];
 
   return (
