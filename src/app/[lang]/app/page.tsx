@@ -73,7 +73,7 @@ export default async function HomePage({ params }: HomePageProps) {
       location: locale === "ro" ? "GIOYA Pizza & Panini, București" : "GIOYA Pizza & Panini, Bucharest",
     },
     {
-      date: "4 Iul 2026",
+      date: "TBA 2026",
       title: locale === "ro" ? "Suspecți pe Velier" : "Suspecți on a Sailboat",
       location: "Coming soon",
     },
