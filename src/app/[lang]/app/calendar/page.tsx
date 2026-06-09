@@ -29,7 +29,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       location: locale === "ro" ? "Orășelul Copiilor, București" : "Orășelul Copiilor, Bucharest",
       price: "50 lei",
       priceNote: locale === "ro" ? "/ persoană" : "/ person",
-      image: "/thumbnails/Suspecti in Treasure Hunt - 31 mai.jpeg",
+      image: "/thumbnails/treasure-hunt-family.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
         ? "Aventură, mister și distracție în oraș pentru familii și copii de minim 8 ani. Rezolvă indiciile, îndeplinește misiunile și transformăm orașul într-o aventură."
@@ -48,7 +48,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       location: locale === "ro" ? "Ateneul Român, București" : "Ateneul Român, Bucharest",
       price: "50 lei",
       priceNote: locale === "ro" ? "/ persoană" : "/ person",
-      image: "/thumbnails/Suspecti in Treasure Hunt - 31 mai.jpeg",
+      image: "/thumbnails/treasure-hunt-adults.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
         ? "Aventură, mister și distracție în oraș, ediție pentru adulți. Rezolvă indiciile, îndeplinește misiunile și transformăm orașul într-o aventură."
@@ -67,7 +67,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       location: "Piața Unirii, Timișoara",
       price: "50 lei",
       priceNote: locale === "ro" ? "/ persoană" : "/ person",
-      image: "/thumbnails/Suspecti in Treasure Hunt - 31 mai.jpeg",
+      image: "/thumbnails/treasure-hunt-family.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
         ? "Aventură, mister și distracție în oraș pentru familii și copii de minim 8 ani. Rezolvă indiciile, îndeplinește misiunile și transformăm orașul într-o aventură."
@@ -86,7 +86,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       location: "Piața Unirii, Timișoara",
       price: "50 lei",
       priceNote: locale === "ro" ? "/ persoană" : "/ person",
-      image: "/thumbnails/Suspecti in Treasure Hunt - 31 mai.jpeg",
+      image: "/thumbnails/treasure-hunt-adults.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
         ? "Aventură, mister și distracție în oraș, ediție pentru adulți. Rezolvă indiciile, îndeplinește misiunile și transformăm orașul într-o aventură."
@@ -105,7 +105,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       location: "Sky Rooftop, Timișoara",
       price: "120 lei",
       priceNote: locale === "ro" ? "/ persoană" : "/ person",
-      image: "/thumbnails/Suspecti la cina _ 23 mai.jpeg",
+      image: "/thumbnails/cina-tropical.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
         ? "O seară de mister cu personaje, secrete și intrigi tropicale, într-o atmosferă elegantă pe rooftop."
@@ -124,7 +124,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       location: locale === "ro" ? "Mirador Rooftop, București" : "Mirador Rooftop, Bucharest",
       price: "120 lei",
       priceNote: locale === "ro" ? "Include o întrebare la tarot și un pahar de prosecco" : "Includes one tarot question and a glass of prosecco",
-      image: "/thumbnails/Suspecti la Tarot _ 16 aprilie & 19 mai.jpeg",
+      image: "/thumbnails/povesti-tarot.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
         ? "O seară de socializare cu un touch de Tarot. Discuții faine despre relații, pasiuni și subiecte care contează. Dress code: Dark Green, Black & Nude."
@@ -143,7 +143,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       location: "Venus",
       price: "99 lei",
       priceNote: locale === "ro" ? "/ persoană" : "/ person",
-      image: "/thumbnails/Suspecti la party _ 29 mai.jpeg",
+      image: "/thumbnails/party-summer-escape.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
         ? "Primul weekend Suspecți la mare, alături de Hai să socializăm. Soare, plajă și o experiență socială de neuitat pe litoral."
@@ -162,7 +162,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       location: locale === "ro" ? "Naïve – etajul 5, București" : "Naïve – 5th floor, Bucharest",
       price: "120 lei",
       priceNote: locale === "ro" ? "/ persoană" : "/ person",
-      image: "/thumbnails/Suspecti la cina _ 23 mai.jpeg",
+      image: "/thumbnails/socializam-cina.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
         ? "O seară de socializare cu stil, cu preparate și atmosferă inspirate din toate colțurile lumii."
