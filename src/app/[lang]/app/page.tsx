@@ -28,29 +28,44 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const upcomingEvents = [
     {
-      date: "29 Mai 2026 • 20:30",
-      title: locale === "ro" ? "Suspecți la Party – Diamonds, Cartels and Tropical Secrets 💎🌴" : "Suspecți at Party – Diamonds, Cartels and Tropical Secrets 💎🌴",
-      location: locale === "ro" ? "Naive – etajul 4, București" : "Naive – 4th floor, Bucharest",
+      date: "13 Iun 2026 • 10:00",
+      title: locale === "ro" ? "Suspecți în Treasure Hunt – Family Edition" : "Suspecți in Treasure Hunt – Family Edition",
+      location: locale === "ro" ? "Orășelul Copiilor, București" : "Orășelul Copiilor, Bucharest",
     },
     {
-      date: "31 Mai 2026 • 12:00",
-      title: locale === "ro" ? "Suspecți în Treasure Hunt – Kids Edition" : "Suspecți in Treasure Hunt – Kids Edition",
-      location: locale === "ro" ? "Calea Victoriei – intersecție cu Bld. Dacia, București" : "Calea Victoriei – at Bld. Dacia, Bucharest",
+      date: "13 Iun 2026 • 18:30",
+      title: locale === "ro" ? "Suspecți în Treasure Hunt – Adults Only" : "Suspecți in Treasure Hunt – Adults Only",
+      location: locale === "ro" ? "Ateneul Român, București" : "Ateneul Român, Bucharest",
     },
     {
-      date: "7 Iun 2026 • 14:00",
-      title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
-      location: locale === "ro" ? "GIOYA Pizza & Panini, București" : "GIOYA Pizza & Panini, Bucharest",
+      date: "20 Iun 2026 • 10:00",
+      title: locale === "ro" ? "Suspecți în Treasure Hunt – Family Edition" : "Suspecți in Treasure Hunt – Family Edition",
+      location: "Piața Unirii, Timișoara",
     },
     {
-      date: "4 Jul 2026",
-      title: locale === "ro" ? "Suspecți pe Velier" : "Suspecți on a Sailboat",
-      location: "Coming soon",
+      date: "20 Iun 2026 • 18:30",
+      title: locale === "ro" ? "Suspecți în Treasure Hunt – Adults Only" : "Suspecți in Treasure Hunt – Adults Only",
+      location: "Piața Unirii, Timișoara",
     },
     {
-      date: "TBA 2026",
-      title: locale === "ro" ? "Suspecți la Prima Vedere – Dincolo de aparențe" : "Suspecți at First Sight – Beyond appearances",
-      location: locale === "ro" ? "To Be Announced" : "To Be Announced",
+      date: "21 Iun 2026 • 16:30",
+      title: locale === "ro" ? "Suspecți la Cină – Cartels, Diamonds & Tropical Secrets 💎🌴" : "Suspecți at Dinner – Cartels, Diamonds & Tropical Secrets 💎🌴",
+      location: "Sky Rooftop, Timișoara",
+    },
+    {
+      date: "25 Iun 2026 • 19:00",
+      title: locale === "ro" ? "Suspecți la Povești – with a touch of Tarot" : "Suspecți Stories – with a touch of Tarot",
+      location: locale === "ro" ? "Mirador Rooftop, București" : "Mirador Rooftop, Bucharest",
+    },
+    {
+      date: "4 Iul 2026 • 18:00",
+      title: locale === "ro" ? "Suspecți la Party – Summer Escape Edition 🌊☀️" : "Suspecți at Party – Summer Escape Edition 🌊☀️",
+      location: "Venus",
+    },
+    {
+      date: "9 Iul 2026 • 19:00",
+      title: locale === "ro" ? "Hai să socializăm la cină – Around the World with Style" : "Hai să socializăm at Dinner – Around the World with Style",
+      location: locale === "ro" ? "Naïve – etajul 5, București" : "Naïve – 5th floor, Bucharest",
     },
   ];
 
