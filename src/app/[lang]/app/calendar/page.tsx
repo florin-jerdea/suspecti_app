@@ -28,7 +28,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       time: "10:00 – 12:00",
       location: locale === "ro" ? "Lumea Copiilor, București" : "Lumea Copiilor, Bucharest",
       price: locale === "ro" ? "de la 80 lei" : "from 80 lei",
-      priceNote: locale === "ro" ? "/ persoană" : "/ person",
+      priceNote: locale === "ro" ? "/ familie" : "/ family",
       image: "/thumbnails/treasure-hunt-family.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
@@ -66,7 +66,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       time: "10:00 – 12:00",
       location: "Parcul Copiilor, Timișoara",
       price: "50 lei",
-      priceNote: locale === "ro" ? "/ persoană" : "/ person",
+      priceNote: locale === "ro" ? "/ familie" : "/ family",
       image: "/thumbnails/treasure-hunt-family.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
@@ -142,7 +142,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       time: "10:00 – 12:00",
       location: locale === "ro" ? "Lumea Copiilor, București" : "Lumea Copiilor, Bucharest",
       price: locale === "ro" ? "de la 80 lei" : "from 80 lei",
-      priceNote: locale === "ro" ? "/ persoană" : "/ person",
+      priceNote: locale === "ro" ? "/ familie" : "/ family",
       image: "/thumbnails/treasure-hunt-family.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
