@@ -28,44 +28,14 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const upcomingEvents = [
     {
-      date: "20 Iun 2026 • 10:00",
+      date: "27 Iun 2026 • 09:00",
       title: locale === "ro" ? "Suspecți în Treasure Hunt – Family Edition" : "Suspecți in Treasure Hunt – Family Edition",
-      location: locale === "ro" ? "Lumea Copiilor, București" : "Lumea Copiilor, Bucharest",
-    },
-    {
-      date: "20 Iun 2026 • 18:00",
-      title: locale === "ro" ? "Suspecți în Treasure Hunt – Adults Only" : "Suspecți in Treasure Hunt – Adults Only",
-      location: locale === "ro" ? "Piața Revoluției, București" : "Piața Revoluției, Bucharest",
-    },
-    {
-      date: "20 Iun 2026 • 10:00",
-      title: locale === "ro" ? "Suspecți în Treasure Hunt – Family Edition (Timișoara)" : "Suspecți in Treasure Hunt – Family Edition (Timișoara)",
       location: "Parcul Copiilor, Timișoara",
-    },
-    {
-      date: "20 Iun 2026 • 18:00",
-      title: locale === "ro" ? "Suspecți în Treasure Hunt – Adults Only (Timișoara)" : "Suspecți in Treasure Hunt – Adults Only (Timișoara)",
-      location: "Piața Unirii, Timișoara",
-    },
-    {
-      date: "21 Iun 2026 • 16:30",
-      title: locale === "ro" ? "Suspecți la Cină – Cartels, Diamonds & Tropical Secrets 💎🌴" : "Suspecți at Dinner – Cartels, Diamonds & Tropical Secrets 💎🌴",
-      location: "Sky Rooftop, Timișoara",
-    },
-    {
-      date: "25 Iun 2026 • 19:00",
-      title: locale === "ro" ? "Suspecți la Povești – with a touch of Tarot" : "Suspecți Stories – with a touch of Tarot",
-      location: locale === "ro" ? "Mirador Rooftop, București" : "Mirador Rooftop, Bucharest",
-    },
-    {
-      date: "27 Iun 2026 • 10:00",
-      title: locale === "ro" ? "Suspecți în Treasure Hunt – Family Edition" : "Suspecți in Treasure Hunt – Family Edition",
-      location: locale === "ro" ? "Lumea Copiilor, București" : "Lumea Copiilor, Bucharest",
     },
     {
       date: "28 Iun 2026 • 18:00",
       title: locale === "ro" ? "Suspecți în Treasure Hunt – Adults Only" : "Suspecți in Treasure Hunt – Adults Only",
-      location: locale === "ro" ? "Piața Revoluției, București" : "Piața Revoluției, Bucharest",
+      location: "Piața Unirii – Domul Catolic, Timișoara",
     },
     {
       date: "4 Iul 2026 • 18:00",
@@ -76,6 +46,16 @@ export default async function HomePage({ params }: HomePageProps) {
       date: "9 Iul 2026 • 19:00",
       title: locale === "ro" ? "Hai să socializăm la cină – Around the World with Style" : "Hai să socializăm at Dinner – Around the World with Style",
       location: locale === "ro" ? "Naïve – etajul 5, București" : "Naïve – 5th floor, Bucharest",
+    },
+    {
+      date: "11 Iul 2026 • 09:00",
+      title: locale === "ro" ? "Suspecți în Treasure Hunt – Family Edition" : "Suspecți in Treasure Hunt – Family Edition",
+      location: locale === "ro" ? "Orășelul Copiilor, București" : "Orășelul Copiilor, Bucharest",
+    },
+    {
+      date: "11 Iul 2026 • 17:00",
+      title: locale === "ro" ? "Suspecți în Treasure Hunt – Adults Only" : "Suspecți in Treasure Hunt – Adults Only",
+      location: locale === "ro" ? "Piața Revoluției – Monumentul lui Iuliu Maniu, București" : "Piața Revoluției – Iuliu Maniu Monument, Bucharest",
     },
     {
       date: "26 Iul 2026 • 14:00",
