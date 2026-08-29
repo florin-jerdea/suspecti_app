@@ -145,30 +145,11 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       location: locale === "ro" ? "Naive, București" : "Naive, Bucharest",
       price: "119 lei",
       priceNote: locale === "ro" ? "/ persoană" : "/ person",
-      image: "/Suspecti/brunch.jpeg",
+      image: "/thumbnails/brunch-karaoke.jpeg",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
         ? "Party de zi cu muzică bună, jocuri interactive și karaoke cu un twist diferit, într-o atmosferă relaxată."
         : "A daytime party with good music, interactive games and karaoke with a different twist, in a relaxed atmosphere.",
-      link: "https://forms.gle/cSEqoEBHxFk8JhRe9",
-      status: "coming_soon" as const,
-    },
-    {
-      id: 34,
-      title: locale === "ro" ? "Suspecți la Cină" : "Suspecți at Dinner",
-      subtitle: locale === "ro" ? "București" : "Bucharest",
-      date: "17",
-      month: "Oct",
-      year: "2026",
-      time: "16:30",
-      location: locale === "ro" ? "Mirador, București" : "Mirador, Bucharest",
-      price: "139 lei",
-      priceNote: locale === "ro" ? "/ persoană" : "/ person",
-      image: "/Suspecti/cina_image.jpeg",
-      gradient: "from-plum-700/20 to-plum-500/20",
-      description: locale === "ro"
-        ? "Descoperă cine e suspectul în timp ce savurezi o cină rafinată. Roluri ușoare, conversații reale și un mister care se dezleagă la masă."
-        : "Find out who the suspect is while you enjoy a refined dinner. Easy roles, real conversations and a mystery that unravels at the table.",
       link: "https://forms.gle/cSEqoEBHxFk8JhRe9",
       status: "coming_soon" as const,
     },

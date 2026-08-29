@@ -63,11 +63,6 @@ export default async function HomePage({ params }: HomePageProps) {
       location: locale === "ro" ? "Naive, București" : "Naive, Bucharest",
     },
     {
-      date: "17 Oct 2026 • 16:30",
-      title: locale === "ro" ? "Suspecți la Cină" : "Suspecți at Dinner",
-      location: locale === "ro" ? "Mirador, București" : "Mirador, Bucharest",
-    },
-    {
       date: "TBA 2026",
       title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
       location: locale === "ro" ? "Detalii în curând" : "Details coming soon",
