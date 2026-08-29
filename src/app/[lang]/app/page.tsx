@@ -28,44 +28,54 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const upcomingEvents = [
     {
-      date: "27 Iun 2026 • 09:00",
+      date: "11 Sep 2026 • 19:30",
+      title: locale === "ro" ? "Suspecți la Cină – Crimă la Balul lui Gatsby" : "Suspecți at Dinner – Murder at Gatsby's Ball",
+      location: "Restaurant Merlot, Timișoara",
+    },
+    {
+      date: "12 Sep 2026 • 10:00",
       title: locale === "ro" ? "Suspecți în Treasure Hunt – Family Edition" : "Suspecți in Treasure Hunt – Family Edition",
-      location: "Parcul Copiilor, Timișoara",
+      location: "Parcul Copiilor Ion Creangă, Timișoara",
     },
     {
-      date: "28 Iun 2026 • 18:00",
-      title: locale === "ro" ? "Suspecți în Treasure Hunt – Adults Only" : "Suspecți in Treasure Hunt – Adults Only",
-      location: "Piața Unirii – Domul Catolic, Timișoara",
+      date: "12 Sep 2026 • 18:00",
+      title: locale === "ro" ? "Suspecți în Treasure Hunt – Adults Edition" : "Suspecți in Treasure Hunt – Adults Edition",
+      location: "Piața Unirii, Timișoara",
     },
     {
-      date: "4 Iul 2026 • 18:00",
-      title: locale === "ro" ? "Suspecți la Party – Summer Escape Edition 🌊☀️" : "Suspecți at Party – Summer Escape Edition 🌊☀️",
-      location: "Venus",
+      date: "20 Sep 2026 • 17:00",
+      title: locale === "ro" ? "Suspecți în Treasure Hunt × Hai să Socializăm – Adults Edition" : "Suspecți in Treasure Hunt × Hai să Socializăm – Adults Edition",
+      location: locale === "ro" ? "Piața Revoluției, București" : "Piața Revoluției, Bucharest",
     },
     {
-      date: "9 Iul 2026 • 19:00",
-      title: locale === "ro" ? "Hai să socializăm la cină – Around the World with Style" : "Hai să socializăm at Dinner – Around the World with Style",
-      location: locale === "ro" ? "Naïve – etajul 5, București" : "Naïve – 5th floor, Bucharest",
+      date: "27 Sep 2026 • 16:30",
+      title: locale === "ro" ? "Suspecți la Cină" : "Suspecți at Dinner",
+      location: locale === "ro" ? "Naive, București" : "Naive, Bucharest",
     },
     {
-      date: "11 Iul 2026 • 09:00",
-      title: locale === "ro" ? "Suspecți în Treasure Hunt – Family Edition" : "Suspecți in Treasure Hunt – Family Edition",
-      location: locale === "ro" ? "Orășelul Copiilor, București" : "Orășelul Copiilor, Bucharest",
+      date: "8 Oct 2026 • 19:00",
+      title: locale === "ro" ? "Hai să socializăm la cină – Around the World with Style, Red Carpet Edition" : "Hai să socializăm at Dinner – Around the World with Style, Red Carpet Edition",
+      location: locale === "ro" ? "Restaurant Naive – etajul 5, București" : "Restaurant Naive – 5th floor, Bucharest",
     },
     {
-      date: "11 Iul 2026 • 17:00",
-      title: locale === "ro" ? "Suspecți în Treasure Hunt – Adults Only" : "Suspecți in Treasure Hunt – Adults Only",
-      location: locale === "ro" ? "Piața Revoluției – Monumentul lui Iuliu Maniu, București" : "Piața Revoluției – Iuliu Maniu Monument, Bucharest",
+      date: "11 Oct 2026 • 16:30",
+      title: locale === "ro" ? "Suspecți la Brunch" : "Suspecți at Brunch",
+      location: locale === "ro" ? "Naive, București" : "Naive, Bucharest",
     },
     {
-      date: "26 Iul 2026 • 14:00",
-      title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
-      location: locale === "ro" ? "GIOYA Pizza & Panini, București" : "GIOYA Pizza & Panini, Bucharest",
+      date: "17 Oct 2026 • 16:30",
+      title: locale === "ro" ? "Suspecți la Cină" : "Suspecți at Dinner",
+      location: locale === "ro" ? "Mirador, București" : "Mirador, Bucharest",
     },
     {
       date: "TBA 2026",
-      title: locale === "ro" ? "Suspecți pe Velier" : "Suspecți on a Sailboat",
-      location: "Coming soon",
+      title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
+      location: locale === "ro" ? "Detalii în curând" : "Details coming soon",
+    },
+    {
+      date: "TBA 2026",
+      title: locale === "ro" ? "Suspecți la Party" : "Suspecți at Party",
+      location: locale === "ro" ? "Detalii în curând" : "Details coming soon",
     },
     {
       date: "TBA 2026",
@@ -238,7 +248,7 @@ export default async function HomePage({ params }: HomePageProps) {
           <div className="space-y-4">
             {upcomingEvents.map((event) => (
               <div
-                key={event.date}
+                key={`${event.date}-${event.title}`}
                 className="flex flex-col sm:flex-row sm:items-center justify-between p-6 rounded-2xl bg-zinc-800/50 border border-zinc-700"
               >
                 <div className="mb-4 sm:mb-0">

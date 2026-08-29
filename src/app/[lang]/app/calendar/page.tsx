@@ -19,14 +19,33 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
 
   const events = [
     {
-      id: 23,
+      id: 27,
+      title: locale === "ro" ? "Suspecți la Cină" : "Suspecți at Dinner",
+      subtitle: locale === "ro" ? "Crimă la Balul lui Gatsby · Timișoara" : "Murder at Gatsby's Ball · Timișoara",
+      date: "11",
+      month: "Sep",
+      year: "2026",
+      time: "19:30",
+      location: "Restaurant Merlot, Timișoara",
+      price: "119 lei",
+      priceNote: locale === "ro" ? "Early Bird" : "Early Bird",
+      image: "/Suspecti/cina_image.jpeg",
+      gradient: "from-plum-700/20 to-plum-500/20",
+      description: locale === "ro"
+        ? "O seară în stil Gatsby, cu mister, glamour și personaje care ascund secrete. Cina se transformă într-o anchetă în care fiecare invitat e suspect."
+        : "A Gatsby-style evening, with mystery, glamour and characters hiding secrets. Dinner turns into an investigation where every guest is a suspect.",
+      link: "https://www.ambilet.ro/bilete/crima-la-balul-lui-gatsby-timisoara-4782" as string | null,
+      status: "available" as "available" | "coming_soon",
+    },
+    {
+      id: 28,
       title: locale === "ro" ? "Suspecți în Treasure Hunt" : "Suspecți in Treasure Hunt",
       subtitle: "Family Edition · Timișoara",
-      date: "27",
-      month: locale === "ro" ? "Iun" : "Jun",
+      date: "12",
+      month: "Sep",
       year: "2026",
-      time: "09:00 – 11:00",
-      location: "Parcul Copiilor, Timișoara",
+      time: "10:00",
+      location: locale === "ro" ? "Parcul Copiilor Ion Creangă, Timișoara" : "Parcul Copiilor Ion Creangă, Timișoara",
       price: "50 lei",
       priceNote: locale === "ro" ? "/ familie" : "/ family",
       image: "/thumbnails/treasure-hunt-family.png",
@@ -34,141 +53,162 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       description: locale === "ro"
         ? "Aventură, mister și distracție în oraș pentru familii și copii de minim 8 ani. Rezolvă indiciile, îndeplinește misiunile și transformăm orașul într-o aventură."
         : "Adventure, mystery and fun in the city for families and kids aged 8+. Solve the clues, complete the missions and we'll turn the city into an adventure.",
-      link: "https://www.ambilet.ro/bilete/suspecti-in-treasure-hunt-family-edition2-timisoara-4607" as string | null,
-      status: "available" as "available" | "coming_soon",
+      link: "https://www.ambilet.ro/bilete/suspecti-in-treasure-hunt-family-edition-timisoara-4831",
+      status: "available" as const,
     },
     {
-      id: 24,
+      id: 29,
       title: locale === "ro" ? "Suspecți în Treasure Hunt" : "Suspecți in Treasure Hunt",
-      subtitle: "Adults Only · Timișoara",
-      date: "28",
-      month: locale === "ro" ? "Iun" : "Jun",
+      subtitle: "Adults Edition · Timișoara",
+      date: "12",
+      month: "Sep",
       year: "2026",
-      time: "18:00 – 20:30",
-      location: locale === "ro" ? "Piața Unirii – Domul Catolic, Timișoara" : "Piața Unirii – Domul Catolic, Timișoara",
-      price: "60 lei",
+      time: "18:00",
+      location: "Piața Unirii, Timișoara",
+      price: locale === "ro" ? "de la 70 lei" : "from 70 lei",
       priceNote: locale === "ro" ? "/ persoană" : "/ person",
       image: "/thumbnails/treasure-hunt-adults.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
         ? "Aventură, mister și distracție în oraș, ediție pentru adulți. Rezolvă indiciile, îndeplinește misiunile și transformăm orașul într-o aventură."
         : "Adventure, mystery and fun in the city, adults edition. Solve the clues, complete the missions and we'll turn the city into an adventure.",
-      link: "https://www.ambilet.ro/bilete/suspecti-in-treasure-hunt-aduls-only-timisoara-4608",
+      link: "https://www.ambilet.ro/bilete/suspecti-in-treasure-hunt-adults-only-timisoara-4783",
       status: "available" as const,
     },
     {
-      id: 19,
-      title: locale === "ro" ? "Suspecți la Party" : "Suspecți at Party",
-      subtitle: locale === "ro" ? "Summer Escape Edition · Primul weekend Suspecți la mare cu Hai să socializăm 🌊☀️" : "Summer Escape Edition · First Suspecți weekend at the seaside with Hai să socializăm 🌊☀️",
-      date: "4",
-      month: locale === "ro" ? "Iul" : "Jul",
+      id: 30,
+      title: locale === "ro" ? "Suspecți în Treasure Hunt × Hai să Socializăm" : "Suspecți in Treasure Hunt × Hai să Socializăm",
+      subtitle: locale === "ro" ? "Adults Edition · București" : "Adults Edition · Bucharest",
+      date: "20",
+      month: "Sep",
       year: "2026",
-      time: "18:00",
-      location: "Venus",
-      price: "99 lei",
+      time: "17:00",
+      location: locale === "ro" ? "Piața Revoluției, București" : "Piața Revoluției, Bucharest",
+      price: "120 lei",
       priceNote: locale === "ro" ? "/ persoană" : "/ person",
-      image: "/thumbnails/party-summer-escape.png",
+      image: "/thumbnails/treasure-hunt-adults.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
-        ? "Primul weekend Suspecți la mare, alături de Hai să socializăm. Soare, plajă și o experiență socială de neuitat pe litoral."
-        : "The first Suspecți weekend at the seaside, together with Hai să socializăm. Sun, beach and an unforgettable social experience by the sea.",
-      link: "https://haisasocializam.ro/excursii-turistice/weekend-la-plaja-si-relaxare-pe-litoralul-marii-negre",
+        ? "Treasure hunt pentru adulți în inima Bucureștiului, alături de Hai să Socializăm. Indicii, misiuni și oameni noi, într-o after-party de socializare."
+        : "An adults treasure hunt in the heart of Bucharest, together with Hai să Socializăm. Clues, missions and new people, in a social after-party.",
+      link: "https://haisasocializam.ro/evenimente-socializare/suspecti-in-treasure-hunt-hai-sa-socializam-adults-edition?ed=1",
       status: "available" as const,
     },
     {
-      id: 20,
+      id: 31,
+      title: locale === "ro" ? "Suspecți la Cină" : "Suspecți at Dinner",
+      subtitle: locale === "ro" ? "București" : "Bucharest",
+      date: "27",
+      month: "Sep",
+      year: "2026",
+      time: "16:30",
+      location: locale === "ro" ? "Naive, București" : "Naive, Bucharest",
+      price: "119 lei",
+      priceNote: locale === "ro" ? "/ persoană" : "/ person",
+      image: "/Suspecti/cina_image.jpeg",
+      gradient: "from-plum-700/20 to-plum-500/20",
+      description: locale === "ro"
+        ? "Descoperă cine e suspectul în timp ce savurezi o cină rafinată. Roluri ușoare, conversații reale și un mister care se dezleagă la masă."
+        : "Find out who the suspect is while you enjoy a refined dinner. Easy roles, real conversations and a mystery that unravels at the table.",
+      link: "https://forms.gle/cSEqoEBHxFk8JhRe9",
+      status: "coming_soon" as const,
+    },
+    {
+      id: 32,
       title: locale === "ro" ? "Hai să socializăm la cină" : "Hai să socializăm at Dinner",
-      subtitle: "Around the World with Style",
-      date: "9",
-      month: locale === "ro" ? "Iul" : "Jul",
+      subtitle: "Around the World with Style · Red Carpet Edition",
+      date: "8",
+      month: "Oct",
       year: "2026",
       time: "19:00 – 23:00",
-      location: locale === "ro" ? "Naïve – etajul 5, București" : "Naïve – 5th floor, Bucharest",
+      location: locale === "ro"
+        ? "Restaurant Naive – etajul 5, Bd. Ion C. Brătianu 36, București"
+        : "Restaurant Naive – 5th floor, Bd. Ion C. Brătianu 36, Bucharest",
       price: "120 lei",
       priceNote: locale === "ro" ? "/ persoană" : "/ person",
       image: "/thumbnails/socializam-cina.png",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
-        ? "O seară de socializare cu stil, cu preparate și atmosferă inspirate din toate colțurile lumii."
-        : "A stylish socializing evening, with dishes and atmosphere inspired from all corners of the world.",
-      link: "https://haisasocializam.ro/evenimente-socializare/hai-sa-socializam-la-cina-around-the-world-with-style?ed=2",
+        ? "O seară de socializare cu stil, ediția Red Carpet, cu preparate și atmosferă inspirate din toate colțurile lumii."
+        : "A stylish socializing evening, Red Carpet edition, with dishes and atmosphere inspired from all corners of the world.",
+      link: "https://haisasocializam.ro/evenimente-socializare/hai-sa-socializam-la-cina-around-the-world-with-style?ed=3",
       status: "available" as const,
     },
     {
-      id: 25,
-      title: locale === "ro" ? "Suspecți în Treasure Hunt" : "Suspecți in Treasure Hunt",
-      subtitle: "Family Edition",
+      id: 33,
+      title: locale === "ro" ? "Suspecți la Brunch" : "Suspecți at Brunch",
+      subtitle: locale === "ro" ? "București" : "Bucharest",
       date: "11",
-      month: locale === "ro" ? "Iul" : "Jul",
+      month: "Oct",
       year: "2026",
-      time: "09:00 – 11:30",
-      location: locale === "ro" ? "Orășelul Copiilor, București" : "Orășelul Copiilor, Bucharest",
-      price: locale === "ro" ? "de la 80 lei" : "from 80 lei",
-      priceNote: locale === "ro" ? "/ familie" : "/ family",
-      image: "/thumbnails/treasure-hunt-family.png",
-      gradient: "from-plum-700/20 to-plum-500/20",
-      description: locale === "ro"
-        ? "Aventură, mister și distracție în oraș pentru familii și copii de minim 8 ani. Rezolvă indiciile, îndeplinește misiunile și transformăm orașul într-o aventură."
-        : "Adventure, mystery and fun in the city for families and kids aged 8+. Solve the clues, complete the missions and we'll turn the city into an adventure.",
-      link: "https://www.ambilet.ro/bilete/suspecti-in-treasure-hunt-family-edition-3-bucuresti-4583",
-      status: "available" as const,
-    },
-    {
-      id: 26,
-      title: locale === "ro" ? "Suspecți în Treasure Hunt" : "Suspecți in Treasure Hunt",
-      subtitle: "Adults Only",
-      date: "11",
-      month: locale === "ro" ? "Iul" : "Jul",
-      year: "2026",
-      time: "17:00 – 20:30",
-      location: locale === "ro" ? "Piața Revoluției – Monumentul lui Iuliu Maniu, București" : "Piața Revoluției – Iuliu Maniu Monument, Bucharest",
-      price: "60 lei",
+      time: "16:30",
+      location: locale === "ro" ? "Naive, București" : "Naive, Bucharest",
+      price: "119 lei",
       priceNote: locale === "ro" ? "/ persoană" : "/ person",
-      image: "/thumbnails/treasure-hunt-adults.png",
+      image: "/Suspecti/brunch.jpeg",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
-        ? "Aventură, mister și distracție în oraș, ediție pentru adulți. Rezolvă indiciile, îndeplinește misiunile și transformăm orașul într-o aventură."
-        : "Adventure, mystery and fun in the city, adults edition. Solve the clues, complete the missions and we'll turn the city into an adventure.",
-      link: "https://www.ambilet.ro/bilete/suspecti-in-treasure-hunt-aduls-only-bucuresti-4584",
-      status: "available" as const,
+        ? "Party de zi cu muzică bună, jocuri interactive și karaoke cu un twist diferit, într-o atmosferă relaxată."
+        : "A daytime party with good music, interactive games and karaoke with a different twist, in a relaxed atmosphere.",
+      link: "https://forms.gle/cSEqoEBHxFk8JhRe9",
+      status: "coming_soon" as const,
+    },
+    {
+      id: 34,
+      title: locale === "ro" ? "Suspecți la Cină" : "Suspecți at Dinner",
+      subtitle: locale === "ro" ? "București" : "Bucharest",
+      date: "17",
+      month: "Oct",
+      year: "2026",
+      time: "16:30",
+      location: locale === "ro" ? "Mirador, București" : "Mirador, Bucharest",
+      price: "139 lei",
+      priceNote: locale === "ro" ? "/ persoană" : "/ person",
+      image: "/Suspecti/cina_image.jpeg",
+      gradient: "from-plum-700/20 to-plum-500/20",
+      description: locale === "ro"
+        ? "Descoperă cine e suspectul în timp ce savurezi o cină rafinată. Roluri ușoare, conversații reale și un mister care se dezleagă la masă."
+        : "Find out who the suspect is while you enjoy a refined dinner. Easy roles, real conversations and a mystery that unravels at the table.",
+      link: "https://forms.gle/cSEqoEBHxFk8JhRe9",
+      status: "coming_soon" as const,
     },
     {
       id: 11,
       title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
       subtitle: locale === "ro" ? "Workshop de automachiaj" : "Self-makeup workshop",
-      date: "26",
-      month: locale === "ro" ? "Iul" : "Jul",
-      year: "2026",
-      time: "14:00",
-      location: locale === "ro" ? "GIOYA Pizza & Panini, București (Lisabona 11, Sector 1)" : "GIOYA Pizza & Panini, Bucharest (Lisabona 11, Sector 1)",
-      price: "349 lei",
-      priceNote: locale === "ro" ? "Early Bird (include cursul + goodiebag)" : "Early Bird (includes the workshop + goodiebag)",
-      image: "/Suspecti/machiaj_image.jpeg",
-      gradient: "from-plum-700/20 to-plum-500/20",
-      description: locale === "ro"
-        ? "Workshop de automachiaj într-o duminică relaxată. Înveți tehnici esențiale pentru a te machia cu produsele tale."
-        : "Self-makeup workshop on a relaxed Sunday. Learn essential techniques to do your own makeup with your own products.",
-      link: "https://www.ambilet.ro/bilete/suspecti-la-automachiaj-4484",
-      status: "available" as const,
-    },
-    {
-      id: 10,
-      title: locale === "ro" ? "Suspecți pe Velier" : "Suspecți on a Sailboat",
-      subtitle: "",
       date: "TBA",
       month: "",
       year: "2026",
       time: "TBA",
       location: locale === "ro" ? "Detalii în curând" : "Details coming soon",
-      price: "Coming soon",
-      priceNote: locale === "ro" ? "Bilete limitate" : "Limited tickets",
-      image: "/thumbnails/Suspecti pe velier - 4 iulie.jpeg",
+      price: "349 lei",
+      priceNote: locale === "ro" ? "Include cursul + goodiebag" : "Includes the workshop + goodiebag",
+      image: "/Suspecti/machiaj_image.jpeg",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
-        ? "O experiență unică pe apă. Detalii în curând."
-        : "A unique experience on water. Details coming soon.",
-      link: "https://forms.gle/aGN2sPtRYSvHfPNZ9" as string | null,
-      status: "available" as "available" | "coming_soon",
+        ? "Workshop de automachiaj într-o zi relaxată. Înveți tehnici esențiale pentru a te machia cu produsele tale."
+        : "Self-makeup workshop on a relaxed day. Learn essential techniques to do your own makeup with your own products.",
+      link: "https://forms.gle/cSEqoEBHxFk8JhRe9",
+      status: "available" as const,
+    },
+    {
+      id: 19,
+      title: locale === "ro" ? "Suspecți la Party" : "Suspecți at Party",
+      subtitle: locale === "ro" ? "Petrecere tematică cu intrigi și dans" : "Themed party with intrigue and dancing",
+      date: "TBA",
+      month: "",
+      year: "2026",
+      time: "TBA",
+      location: locale === "ro" ? "Detalii în curând" : "Details coming soon",
+      price: "TBA",
+      priceNote: locale === "ro" ? "Detalii în curând" : "Details coming soon",
+      image: "/Suspecti/party_image.jpeg",
+      gradient: "from-plum-700/20 to-plum-500/20",
+      description: locale === "ro"
+        ? "Intră în pielea personajului tău la o petrecere de neuitat, cu mister, muzică și oameni noi."
+        : "Step into your character's shoes at an unforgettable party, with mystery, music and new people.",
+      link: "https://forms.gle/cSEqoEBHxFk8JhRe9",
+      status: "available" as const,
     },
     {
       id: 2,
@@ -281,12 +321,23 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
 
                   {/* CTA Button */}
                   {event.status === "coming_soon" ? (
-                    <button
-                      disabled
-                      className="block w-full py-3.5 text-center text-sm font-semibold rounded-full bg-zinc-800 text-zinc-500 cursor-not-allowed"
-                    >
-                      Coming Soon
-                    </button>
+                    event.link ? (
+                      <a
+                        href={event.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block w-full py-3.5 text-center text-sm font-semibold rounded-full bg-zinc-800 text-zinc-300 border border-white/10 hover:bg-plum-600 hover:text-white hover:border-plum-500 transition-all"
+                      >
+                        Coming Soon →
+                      </a>
+                    ) : (
+                      <button
+                        disabled
+                        className="block w-full py-3.5 text-center text-sm font-semibold rounded-full bg-zinc-800 text-zinc-500 cursor-not-allowed"
+                      >
+                        Coming Soon
+                      </button>
+                    )
                   ) : event.link ? (
                     <a
                       href={event.link}
