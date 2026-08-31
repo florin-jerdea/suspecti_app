@@ -162,8 +162,8 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       year: "2026",
       time: "TBA",
       location: locale === "ro" ? "Detalii în curând" : "Details coming soon",
-      price: "349 lei",
-      priceNote: locale === "ro" ? "Include cursul + goodiebag" : "Includes the workshop + goodiebag",
+      price: "",
+      priceNote: "",
       image: "/Suspecti/machiaj_image.jpeg",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
@@ -181,8 +181,8 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       year: "2026",
       time: "TBA",
       location: locale === "ro" ? "Detalii în curând" : "Details coming soon",
-      price: "TBA",
-      priceNote: locale === "ro" ? "Detalii în curând" : "Details coming soon",
+      price: "",
+      priceNote: "",
       image: "/Suspecti/party_image.jpeg",
       gradient: "from-plum-700/20 to-plum-500/20",
       description: locale === "ro"
@@ -200,7 +200,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       year: "2026",
       time: "TBA",
       location: locale === "ro" ? "To Be Announced" : "To Be Announced",
-      price: "200 lei",
+      price: "",
       priceNote: locale === "ro" ? "Exclusiv singles, 27–45 ani" : "Singles only, ages 27–45",
       image: "/thumbnails/Suspecti la prima vedere 18 aprilie & 17 mai .jpeg",
       gradient: "from-plum-700/20 to-plum-500/20",
@@ -295,41 +295,38 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
                   <p className="text-zinc-400 text-sm mb-4 line-clamp-2">{event.description}</p>
 
                   {/* Price */}
-                  <div className="mb-5">
-                    <span className="text-lg font-bold text-white">{event.price}</span>
-                    <span className="text-xs text-zinc-500 ml-2">{event.priceNote}</span>
-                  </div>
+                  {(event.price || event.priceNote) && (
+                    <div className="mb-5">
+                      {event.price && (
+                        <span className="text-lg font-bold text-white">{event.price}</span>
+                      )}
+                      {event.priceNote && (
+                        <span className={`text-xs text-zinc-500 ${event.price ? "ml-2" : ""}`}>
+                          {event.priceNote}
+                        </span>
+                      )}
+                    </div>
+                  )}
 
                   {/* CTA Button */}
-                  {event.status === "coming_soon" ? (
-                    event.link ? (
-                      <a
-                        href={event.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block w-full py-3.5 text-center text-sm font-semibold rounded-full bg-zinc-800 text-zinc-300 border border-white/10 hover:bg-plum-600 hover:text-white hover:border-plum-500 transition-all"
-                      >
-                        Coming Soon →
-                      </a>
-                    ) : (
-                      <button
-                        disabled
-                        className="block w-full py-3.5 text-center text-sm font-semibold rounded-full bg-zinc-800 text-zinc-500 cursor-not-allowed"
-                      >
-                        Coming Soon
-                      </button>
-                    )
-                  ) : event.link ? (
+                  {event.link ? (
                     <a
                       href={event.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full py-3.5 text-center text-sm font-semibold rounded-full bg-white text-zinc-900 hover:bg-plum-500 hover:text-white hover:shadow-lg hover:shadow-plum-700/25 transition-all"
                     >
-                      {event.date === "TBA" || event.link?.includes("forms.gle")
+                      {event.date === "TBA" || event.link.includes("forms.gle")
                         ? (locale === "ro" ? "Înscrie-te aici" : "Register here")
                         : t.calendar.event.buyTicket} →
                     </a>
+                  ) : event.status === "coming_soon" ? (
+                    <button
+                      disabled
+                      className="block w-full py-3.5 text-center text-sm font-semibold rounded-full bg-zinc-800 text-zinc-500 cursor-not-allowed"
+                    >
+                      Coming Soon
+                    </button>
                   ) : (
                     <Link
                       href={`/${locale}/app/experiences/dinner`}
