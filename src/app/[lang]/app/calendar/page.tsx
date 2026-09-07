@@ -2,6 +2,7 @@ import { Locale, isValidLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import TrackedCTA from "@/components/TrackedCTA";
 
 interface CalendarPageProps {
   params: Promise<{ lang: string }>;
@@ -20,6 +21,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
   const events = [
     {
       id: 27,
+      trackingName: "Cina Gatsby · 11 Sep",
       title: locale === "ro" ? "Suspecți la Cină" : "Suspecți at Dinner",
       subtitle: locale === "ro" ? "Crimă la Balul lui Gatsby · Timișoara" : "Murder at Gatsby's Ball · Timișoara",
       date: "11",
@@ -39,6 +41,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
     },
     {
       id: 28,
+      trackingName: "Treasure Hunt Family TM · 12 Sep",
       title: locale === "ro" ? "Suspecți în Treasure Hunt" : "Suspecți in Treasure Hunt",
       subtitle: "Family Edition · Timișoara",
       date: "12",
@@ -58,6 +61,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
     },
     {
       id: 29,
+      trackingName: "Treasure Hunt Adults TM · 12 Sep",
       title: locale === "ro" ? "Suspecți în Treasure Hunt" : "Suspecți in Treasure Hunt",
       subtitle: "Adults Edition · Timișoara",
       date: "12",
@@ -77,6 +81,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
     },
     {
       id: 30,
+      trackingName: "Treasure Hunt x HSS Buc · 20 Sep",
       title: locale === "ro" ? "Suspecți în Treasure Hunt × Hai să Socializăm" : "Suspecți in Treasure Hunt × Hai să Socializăm",
       subtitle: locale === "ro" ? "Adults Edition · București" : "Adults Edition · Bucharest",
       date: "20",
@@ -96,6 +101,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
     },
     {
       id: 31,
+      trackingName: "Cina Naive · 27 Sep",
       title: locale === "ro" ? "Suspecți la Cină" : "Suspecți at Dinner",
       subtitle: locale === "ro" ? "București" : "Bucharest",
       date: "27",
@@ -115,6 +121,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
     },
     {
       id: 32,
+      trackingName: "HSS Cina Red Carpet · 8 Oct",
       title: locale === "ro" ? "Hai să socializăm la cină" : "Hai să socializăm at Dinner",
       subtitle: "Around the World with Style · Red Carpet Edition",
       date: "8",
@@ -136,6 +143,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
     },
     {
       id: 33,
+      trackingName: "Brunch Naive · 11 Oct",
       title: locale === "ro" ? "Suspecți la Brunch" : "Suspecți at Brunch",
       subtitle: locale === "ro" ? "București" : "Bucharest",
       date: "11",
@@ -155,6 +163,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
     },
     {
       id: 11,
+      trackingName: "Automachiaj · TBA",
       title: locale === "ro" ? "Suspecți la Automachiaj" : "Suspecți at Self-Makeup",
       subtitle: locale === "ro" ? "Workshop de automachiaj" : "Self-makeup workshop",
       date: "TBA",
@@ -174,6 +183,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
     },
     {
       id: 19,
+      trackingName: "Party · TBA",
       title: locale === "ro" ? "Suspecți la Party" : "Suspecți at Party",
       subtitle: locale === "ro" ? "Petrecere tematică cu intrigi și dans" : "Themed party with intrigue and dancing",
       date: "TBA",
@@ -193,6 +203,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
     },
     {
       id: 2,
+      trackingName: "Prima Vedere · TBA",
       title: locale === "ro" ? "Suspecți la Prima Vedere" : "Suspecți at First Sight",
       subtitle: locale === "ro" ? "Dincolo de aparențe" : "Beyond appearances",
       date: "TBA",
@@ -310,16 +321,15 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
 
                   {/* CTA Button */}
                   {event.link ? (
-                    <a
+                    <TrackedCTA
                       href={event.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      trackingName={event.trackingName}
                       className="block w-full py-3.5 text-center text-sm font-semibold rounded-full bg-white text-zinc-900 hover:bg-plum-500 hover:text-white hover:shadow-lg hover:shadow-plum-700/25 transition-all"
                     >
                       {event.date === "TBA" || event.link.includes("forms.gle")
                         ? (locale === "ro" ? "Înscrie-te aici" : "Register here")
                         : t.calendar.event.buyTicket} →
-                    </a>
+                    </TrackedCTA>
                   ) : event.status === "coming_soon" ? (
                     <button
                       disabled
