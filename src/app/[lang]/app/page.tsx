@@ -309,8 +309,10 @@ export default async function HomePage({ params }: HomePageProps) {
         </div>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="py-20 px-6">
+      {/* Newsletter signup — disabled 2026-09-11. The button was not even
+          inside a form and had no handler, so clicking it did nothing. */}
+      {/*
+<section className="py-20 px-6">
         <div className="max-w-xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">{t.home.newsletter.title}</h2>
           <p className="text-zinc-400 mb-8">{t.home.newsletter.subtitle}</p>
@@ -326,6 +328,7 @@ export default async function HomePage({ params }: HomePageProps) {
           </div>
         </div>
       </section>
+      */}
 
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-zinc-800">

@@ -48,8 +48,10 @@ export default async function NewsletterPage({ params }: NewsletterPageProps) {
         </div>
       </section>
 
-      {/* Form */}
-      <section className="py-16 px-6">
+      {/* Newsletter signup — disabled 2026-09-11, same reason as the
+          corporate form: nothing was wired up to receive it. */}
+      {/*
+<section className="py-16 px-6">
         <div className="max-w-md mx-auto">
           <form className="space-y-4">
             <input
@@ -69,6 +71,7 @@ export default async function NewsletterPage({ params }: NewsletterPageProps) {
           </p>
         </div>
       </section>
+      */}
     </div>
   );
 }

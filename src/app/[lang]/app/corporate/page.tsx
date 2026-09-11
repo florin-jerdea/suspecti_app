@@ -121,6 +121,12 @@ export default async function CorporatePage({ params }: CorporatePageProps) {
       </section>
 
       {/* CTA Form */}
+      {/* Corporate enquiry form — disabled 2026-09-11.
+          It had no action, no onSubmit and no name attributes, so every
+          submission was silently discarded and the visitor saw a page
+          reload that looked like success. Markup kept intact below:
+          restore it once there is somewhere to submit to. */}
+      {/*
       <section className="py-20 px-6">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4 text-center">{t.corporate.cta.title}</h2>
@@ -180,6 +186,7 @@ export default async function CorporatePage({ params }: CorporatePageProps) {
           </form>
         </div>
       </section>
+      */}
     </div>
   );
 }
