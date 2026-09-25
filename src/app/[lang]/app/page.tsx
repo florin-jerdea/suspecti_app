@@ -28,29 +28,9 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const upcomingEvents = [
     {
-      date: "11 Sep 2026 • 19:30",
-      title: locale === "ro" ? "Suspecți la Cină – Crimă la Balul lui Gatsby" : "Suspecți at Dinner – Murder at Gatsby's Ball",
-      location: "Restaurant Merlot, Timișoara",
-    },
-    {
-      date: "12 Sep 2026 • 10:00",
-      title: locale === "ro" ? "Suspecți în Treasure Hunt – Family Edition" : "Suspecți in Treasure Hunt – Family Edition",
-      location: "Parcul Copiilor Ion Creangă, Timișoara",
-    },
-    {
-      date: "12 Sep 2026 • 18:00",
-      title: locale === "ro" ? "Suspecți în Treasure Hunt – Adults Edition" : "Suspecți in Treasure Hunt – Adults Edition",
-      location: "Piața Unirii, Timișoara",
-    },
-    {
-      date: "20 Sep 2026 • 17:00",
-      title: locale === "ro" ? "Suspecți în Treasure Hunt × Hai să Socializăm – Adults Edition" : "Suspecți in Treasure Hunt × Hai să Socializăm – Adults Edition",
-      location: locale === "ro" ? "Piața Revoluției, București" : "Piața Revoluției, Bucharest",
-    },
-    {
-      date: "27 Sep 2026 • 16:30",
-      title: locale === "ro" ? "Suspecți la Cină" : "Suspecți at Dinner",
-      location: locale === "ro" ? "Naive, București" : "Naive, Bucharest",
+      date: "4 Oct 2026 • 16:30",
+      title: locale === "ro" ? "Suspecți la Cină – Ultimul Dans, ediția disco" : "Suspecți at Dinner – The Last Dance, disco edition",
+      location: locale === "ro" ? "Naïve, București" : "Naïve, Bucharest",
     },
     {
       date: "8 Oct 2026 • 19:00",
@@ -59,8 +39,8 @@ export default async function HomePage({ params }: HomePageProps) {
     },
     {
       date: "11 Oct 2026 • 16:30",
-      title: locale === "ro" ? "Suspecți la Brunch" : "Suspecți at Brunch",
-      location: locale === "ro" ? "Naive, București" : "Naive, Bucharest",
+      title: locale === "ro" ? "Suspecți la Cină – Peaky Blinders Edition" : "Suspecți at Dinner – Peaky Blinders Edition",
+      location: "Restaurant Merlot, Timișoara",
     },
     {
       date: "TBA 2026",
