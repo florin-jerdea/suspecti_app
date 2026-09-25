@@ -36,7 +36,7 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       description: locale === "ro"
         ? "O cină cu mister în ritm disco. Lumini, muzică bună și un ultim dans în care fiecare invitat ascunde ceva."
         : "A mystery dinner with a disco beat. Lights, good music and one last dance where every guest is hiding something.",
-      link: "https://forms.gle/cSEqoEBHxFk8JhRe9" as string | null,
+      link: "https://forms.gle/6XxWYGwErNpovCeDA" as string | null,
       status: "coming_soon" as "available" | "coming_soon",
     },
     {
