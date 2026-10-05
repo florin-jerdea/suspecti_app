@@ -28,11 +28,6 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const upcomingEvents = [
     {
-      date: "4 Oct 2026 • 16:30",
-      title: locale === "ro" ? "Suspecți la Cină – Ultimul Dans, ediția disco" : "Suspecți at Dinner – The Last Dance, disco edition",
-      location: locale === "ro" ? "Naïve, București" : "Naïve, Bucharest",
-    },
-    {
       date: "8 Oct 2026 • 19:00",
       title: locale === "ro" ? "Hai să socializăm la cină – Around the World with Style, Red Carpet Edition" : "Hai să socializăm at Dinner – Around the World with Style, Red Carpet Edition",
       location: locale === "ro" ? "Restaurant Naive – etajul 5, București" : "Restaurant Naive – 5th floor, Bucharest",

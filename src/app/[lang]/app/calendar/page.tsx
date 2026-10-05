@@ -20,26 +20,6 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
 
   const events = [
     {
-      id: 35,
-      trackingName: "Cina Ultimul Dans · 4 Oct",
-      title: locale === "ro" ? "Suspecți la Cină" : "Suspecți at Dinner",
-      subtitle: locale === "ro" ? "Ultimul Dans · ediția disco" : "The Last Dance · disco edition",
-      date: "4",
-      month: "Oct",
-      year: "2026",
-      time: "16:30 – 20:30",
-      location: locale === "ro" ? "Naïve, București" : "Naïve, Bucharest",
-      price: "120 lei",
-      priceNote: locale === "ro" ? "/ persoană" : "/ person",
-      image: "/Suspecti/cina_image.jpeg",
-      gradient: "from-plum-700/20 to-plum-500/20",
-      description: locale === "ro"
-        ? "O cină cu mister în ritm disco. Lumini, muzică bună și un ultim dans în care fiecare invitat ascunde ceva."
-        : "A mystery dinner with a disco beat. Lights, good music and one last dance where every guest is hiding something.",
-      link: "https://forms.gle/6XxWYGwErNpovCeDA" as string | null,
-      status: "coming_soon" as "available" | "coming_soon",
-    },
-    {
       id: 32,
       trackingName: "HSS Cina Red Carpet · 8 Oct",
       title: locale === "ro" ? "Hai să socializăm la cină" : "Hai să socializăm at Dinner",
@@ -58,8 +38,8 @@ export default async function CalendarPage({ params }: CalendarPageProps) {
       description: locale === "ro"
         ? "O seară de socializare cu stil, ediția Red Carpet, cu preparate și atmosferă inspirate din toate colțurile lumii."
         : "A stylish socializing evening, Red Carpet edition, with dishes and atmosphere inspired from all corners of the world.",
-      link: "https://haisasocializam.ro/evenimente-socializare/hai-sa-socializam-la-cina-around-the-world-with-style?ed=3",
-      status: "available" as const,
+      link: "https://haisasocializam.ro/evenimente-socializare/hai-sa-socializam-la-cina-around-the-world-with-style?ed=3" as string | null,
+      status: "available" as "available" | "coming_soon",
     },
     {
       id: 36,
