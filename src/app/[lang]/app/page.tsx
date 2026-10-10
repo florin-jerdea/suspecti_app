@@ -28,14 +28,34 @@ export default async function HomePage({ params }: HomePageProps) {
 
   const upcomingEvents = [
     {
-      date: "8 Oct 2026 • 19:00",
-      title: locale === "ro" ? "Hai să socializăm la cină – Around the World with Style, Red Carpet Edition" : "Hai să socializăm at Dinner – Around the World with Style, Red Carpet Edition",
-      location: locale === "ro" ? "Restaurant Naive – etajul 5, București" : "Restaurant Naive – 5th floor, Bucharest",
-    },
-    {
       date: "11 Oct 2026 • 16:30",
       title: locale === "ro" ? "Suspecți la Cină – Peaky Blinders Edition" : "Suspecți at Dinner – Peaky Blinders Edition",
       location: "Restaurant Merlot, Timișoara",
+    },
+    {
+      date: "18 Oct 2026 • 14:00",
+      title: locale === "ro" ? "Suspecți la Brunch – The Singing Brunch" : "Suspecți at Brunch – The Singing Brunch",
+      location: locale === "ro" ? "Naïve, București" : "Naïve, Bucharest",
+    },
+    {
+      date: "24 Oct 2026 • 10:00",
+      title: locale === "ro" ? "Suspecți în Treasure Hunt – Family Edition" : "Suspecți in Treasure Hunt – Family Edition",
+      location: locale === "ro" ? "Parcul Copiilor – intrarea principală, Timișoara" : "Parcul Copiilor – main entrance, Timișoara",
+    },
+    {
+      date: "24 Oct 2026 • 15:00",
+      title: locale === "ro" ? "Suspecți în Treasure Hunt – Adults Only" : "Suspecți in Treasure Hunt – Adults Only",
+      location: "Piața Unirii – Domul Catolic, Timișoara",
+    },
+    {
+      date: "31 Oct 2026 • 20:00",
+      title: locale === "ro" ? "Suspecți la Party – Halloween Edition" : "Suspecți at Party – Halloween Edition",
+      location: "DaHUB, Timișoara",
+    },
+    {
+      date: locale === "ro" ? "6 Noi 2026 • 20:00" : "6 Nov 2026 • 20:00",
+      title: locale === "ro" ? "Suspecți la Cină – Ultimul Dans, '80s Disco Party" : "Suspecți at Dinner – Ultimul Dans, '80s Disco Party",
+      location: locale === "ro" ? "București" : "Bucharest",
     },
     {
       date: "TBA 2026",
